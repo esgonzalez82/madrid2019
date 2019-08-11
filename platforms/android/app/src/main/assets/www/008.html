@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Las Ramblas<br />
+	<audio src="audios/barcelona008.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker008">Ver ubicación</button>
+<img src="images/008.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La Rambla es una de las principales arterias de Barcelona, y uno de los lugares más conocidos de la ciudad. Se trata de un paseo de 1,3 kilómetros que conecta la Plaza de Cataluña con el Port Vell, el antiguo puerto de la ciudad. Es una calle que divide dos de los cuatro barrios del casco antiguo. Partiendo de plaza de Cataluña y bajando hacia el puerto, el visitante tendrá siempre el Barrio Gótico a su izquierda y el Raval a su derecha. <br />
+Siempre están animadas, repletas de turistas y artistas callejeros. El paseo cuenta también con kioscos de prensa, flores, comercios y cafeterías y restaurantes. Cerca del puerto acostumbran a instalarse mercadillos, así como pintores y dibujantes. <br />
+La palabra Rambla, de origen árabe, es con la que se conoce en castellano a un torrente de agua. Lo que hoy es una concurrida calle por la que pasean continuamente cientos de turistas y barceloneses, tiempo atrás lo que pasaba por ahí era el agua de una riera llamada Riera d’en Malla. Esta Riera acababa desembocando en algún punto entre lo que hoy es la Plaça del Duc de Medinacelli y Plaça de la Mercè. Con la construcción de la muralla del Raval en el siglo XV la riera fue desviada. A partir de ese momento se construyeron varios conventos, sobre todo en el lado del Raval, pero desaparecieron con la quema de conventos de 1835 y fueron desamortizados. En el espacio liberado por la desaparición de los conventos se construyeron varios equipamientos y espacios públicos para la ciudad. Algunos de ellos son el Liceo, la Boquería y la plaza Real. <br />
+<br />
+Las diferentes ramblas, empezando desde la Plaza de Cataluña, son las siguientes:<br />
+<br />
+Rambla de Canaletes: Situada en la parte más alta de las Ramblas, junto a la Plaza de Cataluña, es el tramo de la Rambla donde se encuentra ubicada la fuente de Canaletes. Es la fuente de agua potable más famosa de Barcelona. También es el punto de encuentro de los seguidores del Fútbol Club Barcelona cuando celebran sus victorias de forma multitudinaria en el centro de la ciudad. Tiene también mucha relevancia para el visitante foráneo, ya que se dice que quien bebe de su agua, regresará a Barcelona.<br />
+<br />
+Rambla de los Estudios: Llamada así gracias a la antigua ubicación del Estudio General o Universidad. También es conocida como la rambla de los pájaros debido a que en las inmediaciones se encontraba el antiguo Mercado de los Pájaros.<br />
+<br />
+Rambla de las Flores: Es la parte más colorida y perfumada de Las Ramblas que se encuentra repleta de puestos de flores. Aquí es donde se encuentra el mítico Mercado de la Boquería.<br />
+<br />
+Rambla de los Capuchinos: También se la conoce como la Rambla del Centro, cuenta con numerosos lugares de interés en sus inmediaciones, como son el Gran Teatro Liceo, el Palacio Güell, o la Plaza Real.<br />
+<br />
+Rambla de Santa Mònica: Funciona como vestíbulo del puerto. Esta parte de la Rambla es una animada zona repleta de bares y restaurantes. Al final de la avenida, justo antes de llegar al mar se encuentra el Mirador de Colón.<br />
+<br />
+La Rambla fue el escenario protagonista del atentado terrorista, reivindicado horas más tarde por el autodenominado Estado Islámico, que tuvo lugar en Barcelona la tarde del 17 de agosto de 2017.<br />
+El atentado resultó con 14 fallecidos y más de un centenar de heridos de 34 nacionalidades distintas.<br />
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

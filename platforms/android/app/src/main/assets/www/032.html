@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Fuente mágica del Montjuic<br />
+	<audio src="audios/barcelona032.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker032">Ver ubicación</button>
+<img src="images/032.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La fuente Mágica de Montjuic está situada en la plaza de Carles Buïgas, en el distrito de Sants-Montjuïc, Barcelona. Se encuentra entre la montaña de Montjuïc y la Plaza Espanya, al final de la Avenida Reina Maria Cristina, justo debajo del Palau Nacional. La fuente es una de las numerosas atracciones turísticas y el lugar perfecto para relajarse y sentir el encanto único de la ciudad. La visitan alrededor de 2.5 millones de personas visitan cada año. Está abierta a todo el mundo y la asistencia es gratuita. Incluso cuando la fuente no está funcionando, es un lugar privilegiado que ofrece espectaculares vistas de Barcelona, desde la PLAZA ESPANYA hasta la ladera del TIBIDABO.<br />
+<br />
+En 1929, la zona de Montjuïc experimentó una de las mayores renovaciones en la historia de la ciudad, todo para preparar la Exposición Universal de Barcelona del mismo año. Una de esas renovaciones fue la creación de la Fuente Mágica de Montjuïc por Carles Buïgas en el lugar donde estaban situadas las Cuatro Columnas de Josep Puig i Cadafalch. El plan fue un añadido de última hora, cuya planificación se comenzó tan sólo un año antes del inicio de la exposición y en donde se necesitaron más de 3.000 trabajadores para finalizarlo antes de la primera demostración en mayo de 1929. El ingeniero creó esta obra al pie del entonces palacio Real, hoy en día el Museo Nacional de Arte de Cataluña. Carles Buïgas era un ingeniero civil local y este fue su primer proyecto con fuentes iluminadas. El concepto de una fuente iluminada no era exactamente algo nuevo para la época pero fue posiblemente una de las primeras en hacerlo como parte de un espectáculo regular y sincronizado. <br />
+<br />
+La Fuente contiene 3.620 mangueras de agua que son capaces de disparar el agua a 4 metros de altura. Fue totalmente restaurada en 1992 para los Juegos Olímpicos de 1992 en Barcelona. Tiene, además, un sistema de reciclado del agua posterior a la implantación de un decreto de sequía en 2008 por el gobierno catalán. La Fuente Mágica tiene unos 7.000 millones de combinaciones posibles de agua y luz gracias a la posibilidad que tiene de conjugar los elementos hidráulicos y de iluminación de los que dispone. <br />
+<br />
+El espectáculo empieza con música de los 70’s y 80’s y continua con música clásica y canciones recientes y tiene varias coreografías que oscilan desde espectáculos de música de películas, espectáculos de música clásica, una zarzuela, una mezcla de música de los siglos veinte y veintiuno e incluso una mezcla pop de la canción Barcelona, de Freddie Mercury y Montserrat Caballé.<br />
+<br />
+
+<b>Horario</b><br />
+Horario de iluminación de la Fuente Mágica<br />
+Del 1 de abril al 31 de mayo.<br />
+Jueves, viernes y sábados de 21h a 22h.<br />
+Con música y color 21h y 21.30h.<br />
+<br />
+De 1 de junio al 30 de septiembre<br />
+De miércoles a domingos de 21:30h a 22:30h.<br />
+Con música y color 21.30h y 22h.<br />
+Del 1 de octubre al 31 de octubre.<br />
+Jueves, viernes y sábados de 21h a 22h.<br />
+Con música y color 21h y 21.30h.<br />
+<br />
+Del 1 de noviembre al 6 de enero.<br />
+Jueves, viernes y sábados de 20h a 21h.<br />
+Con música y color 20h y 20.30h.<br />
+<br />
+Del 7 de enero al 28 de febrero.<br />
+Todos los días	cerrado.<br />
+<br />
+Del 1 de marzo al 31 de marzo.<br />
+Jueves, viernes y sábados de 20h a 21h.<br />
+Con música y color 20h y 20.30h.<br />
+<br />
+<b>Como llegar</b><br />
+FGC y metro<br />
+L1 y L3, parada Espanya<br />
+<br />
+Bus<br />
+55 y Bus Turístic, parada MNAC<br />
+<br />
+Aparcamiento de bicicletas y Bicing
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

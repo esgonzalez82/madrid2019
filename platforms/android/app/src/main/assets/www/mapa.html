@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>	
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var pop = getParameterByName('pop');	
+	</script>  
+</head>
+  
+<body onLoad="init_watch_position()">
+
+<div id="map"></div>
+	
+<div class="centrar"></div>
+
+<div id="mensaje"></div>
+
+	
+<div id="div01" style="visibility: hidden;">
+	<button type="button" class="btn-audios" onClick="ver_en_el_mapa()">ver en el mapa</button>
+
+</div>	
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+<script src="js/barcelona.js"></script>		
+<script src="js/bicis.js"></script>  
+<script src="js/markersindividuales.js"></script>
+	
+</body>
+
+</html>

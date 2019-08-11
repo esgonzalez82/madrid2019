@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Tibidabo<br />
+	<audio src="audios/barcelona022.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker022">Ver ubicación</button>
+<img src="images/022.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Tibidabo es, con 512 metros sobre el nivel del mar, el pico más alto de la sierra de Collserola, en el municipio de Barcelona. Es popular por sus vistas sobre la ciudad y por sus espacios naturales, que son usados con fines recreativos.<br />
+Hasta el siglo XIX había sido guarida de bandoleros y un lugar de pasto de cabras. Sin embargo, la montaña del Tibidabo comenzó a ser urbanizada a finales de ese siglo, por iniciativa del doctor Salvador Andreu, con mansiones y casas señoriales. 
+Por la avenida Tibidabo circula el famoso tranvía azul, construido en 1901 y concebido para el desplazamiento de los residentes por la urbanización. Actualmente lo utilizan los turistas para acceder al conocido como mirador “Mirablau”, desde el cual se disfruta de una inmejorable panorámica de la ciudad. En este mirador se encuentra el funicular que sube hasta la cima del Tibidabo.<br />
+Se puede ascender al Tibidabo en vehículo privado y en transporte público como autobús, el popular Tranvía Azul o el funicular, inaugurados en 1901.<br />
+<br />
+En la cima del Tibidabo se encuentran varios edificios, entre los que destaca:<br />
+<br />
+Templo Expiatorio del Sagrado Corazón. Esta iglesia, debido a su diseño y su ubicación en lo alto de la montaña, recuerdan a la Basílica del Sacré Cœur del barrio parisino de Montmartre. Es un edificio monumental de estilo neogótico coronado por una estatua de bronce del Sagrado Corazón. La parte superior del templo está a 575 metros sobre el nivel del mar y permite observar las mejores vistas de toda Barcelona. Obra del arquitecto Enric Sagnier i Villavecchia y finalizada por su hijo Josep Maria Sagnier i Vidal, su construcción se prolongó de 1902 a 1961.<br />
+<br />
+Otra de las edificaciones en la cima del Tibidabo es el Observatorio Fabra, el cuarto más antiguo del mundo, que todavía funciona. Construido en 1901, se ocupa desde hace más de 100 años del desarrollo de las investigaciones científicas relacionadas con las ramas de la meteorología, la sismología y la astronomía. Es propiedad de la Real Academia de Ciencias y Artes de Barcelona y debe su nombre al mecenas que hizo posible su construcción, el industrial Camilo Fabra.<br />
+<br />
+El Parque de Atracciones Tibidabo data de 1901 y eso lo convierte en un referente histórico de la ciudad, ya que es el primer parque de atracciones de España y el tercero más antiguo de Europa.<br />
+<br />
+Otra de las edificaciones, la Torre de Collserola, es una moderna antena de telecomunicaciones diseñada por Norman Foster e inaugurada en 1992 con motivo de los Juegos Olímpicos de Barcelona. Tiene 268 m de altura y cuenta con un mirador en su cima. La torre compone el nudo de las telecomunicaciones de Cataluña, recogiendo el 100% de la televisión y el 95% de las emisoras de radio de Barcelona.<br />
+<br />
+También podemos encontrar el pabellón de Ràdio Barcelona, construido entre 1922 y 1929 por el arquitecto Nicolau Maria Rubió i Tudurí. Constituye el primer ejemplo de racionalismo arquitectónico y la primera emisora de radio que funcionó en España.<br />
+<br />
+Asimismo, encontramos en la cima el hotel Florida, de color blanco y visible por toda Barcelona, inspirado en la arquitectura americana de los años veinte. Es un hotel de lujo, construido en 1925 por el arquitecto Ramon Reventós, con pinturas en su interior de Joan Trujols.<br />
+<br />
+La Torre Pastor de Cruïlles, es un edificio modernista del arquitecto Josep Puig i Cadafalch, situado cerca de la cima del Tibidabo y protegido como bien cultural de interés local. Se trata de una pequeña villa-estudio de la marquesa del Castell de Torrent, llamada también "El Roserar", construida en 1904.<br />
+<br />
+Por último, podemos nombrar la Torre de les Aigües de Dos Rius, edificada según un proyecto del arquitecto Josep Amargós i Samaranch de 1905, de inspiración renacentista. Es cilíndrica, de ladrillo y piedra natural coronado por una cúpula semiesférica que contiene el depósito de agua, de 200 m3. Su altura es de 53 m y  se construyó para abastecer de agua la colonia del Dr. Andreu, quien como mencionamos, tuvo la iniciativa de urbanizar el Tibidabo por finales del siglo XIX. Está en el catálogo del Patrimonio Arquitectónico de Barcelona.<br />
+<br />
+Parque de diversiones<br />
+<b>Horario</b><br />
+Lunes a Viernes<br />
+de 11h a 18h<br />
+Sabado y domingo<br />
+de 11h a 21h<br />
+<br />
+<b>Precio</b><br />
+Adulto 28,50€<br />
+Menor 120cm altura 10,30€<br />
+Área Panorámica 12,70€<br />
+Panorámica menor 120cm 7,80€<br />
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

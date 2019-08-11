@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+Museo Nacional de Arte de Cataluña
+<br />
+	<audio src="audios/barcelona002.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker002">Ver ubicación</button>
+<img src="images/002.jpg"  width="100%"><br />
+<!-- 500x300 -->
+</div>
+
+<div class="detalle">
+
+El Museo Nacional de Arte de Cataluña (MNAC) es uno de los museos más importantes de Barcelona y de toda España y se destaca por su excelente colección de arte románico, considerada la más completa del mundo. El museo comprende todo tipo de arte y abarca un amplio periodo histórico, desde el románico hasta mediados del siglo XX.<br />
+<br />
+El Museo, tal y como lo conocemos hoy en día se constituyó en 1990 y fue el resultado de la fusión de colecciones del Museo de Arte Moderno, creado en 1945, y el Museo de Arte de Cataluña, inaugurado en 1934. Aunque está formado por varios edificios, el principal y más conocido es el Palacio Nacional de Montjuïc, edificio que se construyó para la Exposición Universal de 1929.<br />
+<br />
+El Palau Nacional, que casi alcanza los 50.000 m2, es un edificio de grandes proporciones. En su construcción se fusionaron elementos del renacimiento y del barroco a fin de intentar combinar lo más típico y reconocible de España con el clasicismo, que era norma en edificios públicos de la época. Su fachada está coronada por una gran cúpula, inspirada en la de San Pedro del Vaticano, dos de menor tamaño, a cada lado y cuatro torres inspiradas en la catedral de Santiago de Compostela. Está situado en la montaña de Montjuïc, un entorno privilegiado desde el cual se puede disfrutar de una magnífica vista de Barcelona. El acceso frontal al Palau Nacional se efectúa a través de una gran escalinata desde la avenida de la Reina María Cristina, flanqueada a medio camino por las grandes fuentes luminosas de Carles Buïgas.<br />
+Entre las zonas más interesantes del edificio destacan el Salón Oval, el Salón del Trono y la impresionante cúpula principal.<br />
+En 1934 abrió sus puertas como Museo de arte de Cataluña, reuniendo la colección medieval. Posteriormente, en 1995, ya como Museo Nacional de arte de Cataluña, se inauguran las salas nuevas de arte románico y de manera sucesiva se va ampliando la presentación pública de los fondos, proceso que culmina en 2004 con la presentación nueva de arte moderno.<br />
+<br />
+Colecciones:<br /><br />
+-Arte Románico: El museo expone una serie de pinturas murales que la convierten en única en el mundo. La mayoría de las piezas son muestras del arte románico en Cataluña y en Aragón.<br /><br />
+-Arte Gótico: presenta un rico conjunto de pinturas murales, esculturas en piedra o madera y numerosas piezas de orfebrería. Cabe destacar los retablos pictóricos de los grandes maestros catalanes del siglo XIV y XV como Jaume Huget o Lluís Borrassà.<br /><br />
+-Arte del Renacimiento y Barroco:  Presentando las obras de grandes artistas como Tiziano, Tintoretto, El Greco y Rubens.<br /><br />
+-Arte Moderno: Desde el Neoclasicismo hasta las vanguardias, reúne el conjunto más importante de arte catalán desde el siglo XIX hasta mediados del siglo XX, con destacadísimas piezas de artistas modernistas como Isidre Novell, Santiago Rusiñol, Ramón Casas y vanguardistas del siglo XX, representados por obras de Antoni Tàpies, Picasso y Salvador Dalí entre otros.<br /><br />
+-Gabinete Numismático de Cataluña: Formado por más de 135.000 ejemplares.<br /><br />
+-Gabinete de Dibujos y Grabados: Con más de 100.000 obras.<br />
+<br /><br />
+
+
+<b>Horario</b><br />
+Desde octubre hasta abril<br />
+De martes a sábado: de 10:00 a 18:00 h<br />
+Domingos y festivos: de 10:00 a 15:00 h<br />
+Lunes: cerrado.<br />
+Desde mayo hasta septiembre<br />
+De martes a sábado: de 10:00 a 20:00 h<br />
+Domingos y festivos: de 10:00 a 15:00 h<br />
+Lunes: cerrado.<br /><br />
+
+<b>Precio</b><br />
+Adultos: 12€.<br />
+Estudiantes: 30% de descuento.<br />
+Entrada combinada: entrada general + audioguía: 14 € (solo compra online)<br />
+Subida a las Terrazas-Mirador: 2 €<br />
+Audioguía: 4 €<br /><br />
+Entrada gratuita:<br />
+Menores de 16 y mayores de 65 años.<br />
+Primer domingo del mes y sábados a partir de las 15:00 horas.<br />
+12 de febrero, Santa Eulalia.<br />
+18 de mayo, Día Internacional de los Museos.<br />
+11 de septiembre, Día de Cataluña.<br />
+24 de septiembre, Día de la Mercè.
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

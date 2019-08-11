@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	PLaza Real<br />
+	<audio src="audios/barcelona012.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker012">Ver ubicación</button>
+<img src="images/012.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La plaza Real de la ciudad de Barcelona (Plaça Reial en catalán) es una plaza pública que está situada en el Barrio Gótico. Es de forma trapezoidal y fue construida por el arquitecto Francesc Daniel Molina en el año 1848.<br />
+Decorada con una fuente, farolas y palmeras, esta plaza es una de las más bulliciosas y vitales de Barcelona, especialmente de noche. Bajo los porches se esconden restaurantes, bares y algunos de los locales nocturnos más frecuentados de la ciudad. También es la más apreciada de las plazas porticadas de Barcelona.<br />
+Hacia 1835, fruto de la desamortización eclesiástica, los conventos y las iglesias eran confiscadas por el Estado. Asimismo, desaparecían muchos de los edificios religiosos de Barcelona. Fue el caso del antiguo convento de los capuchinos de Santa Madrona situado en este lugar desde el año 1718, que fue derribado. Allí se urbanizaría, unos años después, la actual plaza Real. El arquitecto encargado de la obra fue Francesc Daniel Molina, que concibió una plaza lujosa con la finalidad de enaltecer la monarquía. <br />
+El rey Fernando VII, monarca de la época, debía quedar inmortalizado en el centro de la plaza con una estatua ecuestre. El monumento no se llegó a hacer y en su lugar encontramos la fuente de las Tres Gracias (1876), obra de Antoine Durenne. <br />
+A ambos lados de la fuente central hay dos farolas, obra juvenil de Antoni Gaudí, que están culminadas por un casco alado y un dragón y que fueron instaladas en la plaza en 1879. <br />
+Los edificios que rodean la plaza forman un conjunto uniforme con la planta baja porticada, decoradas las fachadas con motivos de terracota helenizantes, bustos de navegantes y de exploradores americanos y escudos soportados por infantes indios.<br />
+Entre los años 1982 y 1984, la plaza fue remodelada por los arquitectos Frederic de Correa y Alfons Milà, destacando especialmente la supresión de la circulación de vehículos y la plantación de las palmeras.
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

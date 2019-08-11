@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Fossas de les moreres<br />
+	<audio src="audios/barcelona023.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker023">Ver ubicación</button>
+<img src="images/023.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Fossar de les Moreres o "cementerio de las Moreras" es una plaza de la ciudad de Barcelona, España, construida sobre el antiguo cementerio perteneciente a la adyacente basílica de Santa María del Mar. En este punto situado en medio del Barrio del Born, se encuentra el foso con los caídos durante el sitio de Barcelona de 1714, en el marco de la Guerra de Sucesión Española. El motivo de que en este lugar se recuerde a los defensores caídos es que, durante la batalla del 11 de septiembre de 1714, muchos de los defensores muertos en combate fueron enterrados aquí.<br />
+<br />
+Los orígenes del Fossar de les Moreres datan del siglo xii, cuando el párroco de la iglesia de Santa María del Mar, se encontraba necesitado de un lugar cercano a su parroquia para enterrar a sus fieles. Solicitó entonces, a un banquero llamado Bernat Marcús, la donación de un terreno adyacente a la iglesia, que era de su propiedad. Marcús, después de meditarlo largamente, le cedió el solar, pero con la condición de que en el plazo máximo de quince días se debía haber enterrado en su solar algún feligrés. Marcús consideraba que si transcurrido dicho plazo el terreno no se había utilizado, no era tan necesario como el párroco pretendía. Al no haberse efectuado ninguno, el banquero se dirigió a Santa María para reclamar la propiedad. Fue justamente en el Fossar de les Moreres, en donde cayó fulminado por una afección cardíaca, siendo el propio donante quien inauguró el cementerio.<br />
+<br />
+En 1705, mediante el Pacto de Génova, los caudillos austracistas catalanes firmaron una alianza militar entre el Principado de Cataluña y el Reino de Inglaterra. En virtud de este pacto, Cataluña se comprometía a luchar por la causa del pretendiente al trono español, Carlos de Austria, con la ayuda militar de Inglaterra. Por la otra parte, Inglaterra se comprometía a defender las Constituciones de Cataluña fuera cual fuere el resultado de la guerra. Sin embargo, en 1713, tras la renuncia de Felipe V al trono de Francia, la entrega de Gibraltar y Menorca, y las concesiones comerciales en América, los ingleses cedieron ante Felipe. Este se comprometió en el artículo 13 del Tratado de Utrecht a amnistiar a los catalanes y a concederles sólo los mismos derechos y privilegios que los habitantes de las dos Castillas. Ante el abandono inglés, se convocó en Barcelona el 30 de junio de 1713 una Junta de Brazos. Finalizaría el 9 de julio con la publicación del edicto por el cual Cataluña declaraba la guerra en solitario a Felipe V y contra Francia. A los pocos días, las tropas de Felipe V rodearon la ciudad e iniciaron un bloqueo de once meses. Ante el fracaso del bloqueo, Felipe V solicitó a su abuelo Luis XIV de Francia que le enviara militares franceses. En julio de 1714, y con la llegada del duque de Berwick, se inició el asedio que finalizaría con la toma de la ciudad. El 11 de septiembre se ha convertido en la Fiesta Nacional de Catalunya, la Diada. Aquel día de 1714, Barcelona se rendía ante los Borbones y se iniciaba una época de represión contra los catalanes, con la abolición de leyes e instituciones.<br />
+<br />
+En el año 1989,  se urbanizó la plaza con el objetivo de instalar un monumento en memoria de los caídos en 1714. El proyecto fue encargado a la arquitecta Carme Fiol, quien puso al descubierto el lugar exacto donde fueron enterradas las víctimas de aquel sitio. Se derribaron las casas que había y se cubrió el lugar con un ladrillo tan rojo como la sangre vertida. El foso, que originariamente era el cementerio de Santa Maria del Mar, salía a la luz pública. <br />
+Posteriormente, en 2001, se colocó el pebetero, obra de Alfons Viaplana. En su extremo superior siempre arde una llama, símbolo del homenaje eterno. Y al fondo de la plaza una placa reproduce los versos de Frederic Soler "Pitarra": "En el Foso de las moreras no se entierra a ningún traidor, incluso perdiendo nuestras banderas será la urna del honor". Es considerado un bien de interés Nacional desde 1915.
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

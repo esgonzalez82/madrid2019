@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Museo Picasso<br />
+	<audio src="audios/barcelona005.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker005">Ver ubicación</button>
+<img src="images/005.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El museo Picasso de Barcelona posee una colección de 4.249 obras del pintor malagueño Pablo Picasso en los múltiples medios que abordó como pintura,escultura, dibujo y grabado. La colección es la más completa del mundo en obras de su juventud. Se encuentra situado en la calle Montcada y abrió sus puertas al público por primera vez el 9 de marzo de 1963. Está declarado museo de interés nacional por la Generalidad de Cataluña.<br />
+<br />
+En 1953 Pablo Picasso, por mediación de Juan Temboury, se planteó donar obras para un museo en Málaga, su ciudad natal. Sin embargo, la iniciativa quedó frustrada tras recibir la negativa por parte de las autoridades de la ciudad. En 1960, Jaime Sabartés, quien desde 1935 fue amigo personal y secretario del artista, propuso al Ayuntamiento con el consentimiento de Picasso, la posibilidad de crear un museo. Este estaría exclusivamente dedicado al artista malagueño. El 27 de julio del mismo año se firmó el acuerdo que constituía el museo. La colección se inició con la donación de la colección privada del propio Sabartés. <br />
+El museo se inauguró oficialmente el 9 de marzo de 1963, bajo el nombre de Colección Sabartés, debido a las conocidas diferencias políticas entre Picasso y el régimen franquista que gobernaba en ese momento. <br />
+<br />
+Con los años, la colección se fue ampliando progresivamente con donaciones, como la de los 7 dibujos -fechados entre 1899 y 1904 - que Sebastià Junyer Vidal dio el 1966. Dos años más tarde, el 1968, Sabartés murió y el propio Picasso entregó a la pinacoteca una serie de 58 cuadros sobre Las Meninas de Velázquez, así como el Retrato azul de Sabartés, de 1901. Además, se comprometió a dar al museo una copia de cada nuevo grabado que realizara.<br />
+La mayoría de las pinturas que se exponen en el museo corresponden al periodo comprendido entre 1890 y 1917. Se trata de una colección muy importante en cuanto a determinados momentos de la vida de Picasso, como son su época infantil y escolar, y la formativa en Barcelona y Horta de Sant Joan y Madrid. También hay obras de su periodo azul y obras de su período barcelonés en 1917, como Arlequín. El museo dispone de muy pocas pinturas posteriores a ese año, exceptuando la serie de Las Meninas, pintada en 1957.<br />
+<br />
+El Museo Picasso ha realizado decenas de exposiciones temporales desde que fue inaugurado. A menudo, estas exposiciones están relacionadas con la figura del pintor o con temáticas relacionadas con su ambiente, intentando buscar y revisar la obra y los estudios del pintor malagueño.<br />
+<br />
+El museo está compuesto por 5 grandes palacios ​​fechados entre el siglo XIII y el XIV, de estilo Gótico Catalán a lo largo de los cuáles se muestran las obras de Picasso ordenadas cronológicamente. <br />
+<br />
+En el museo es posible disfrutar de una extensa colección de obras del afamado pintor, entre las que destacan:<br />
+-Hombre con boina<br />
+-Retrato de la tía Pepa<br />
+-Ciencia y caridad<br />
+-El diván<br />
+-La mujer de la cofia<br />
+-El abrazo<br />
+-La particular versión del artista de “Las Meninas”<br />
+<br />
+<b>Horarios</b><br />
+Martes a domingo de 9 a 19 h<br />
+Jueves de 9 a 21.30 h<br />
+<br />
+<b>Entrada gratuita</b><br />
+Jueves por la tarde de 18 a 21.30 h<br />
+El primer domingo de cada mes, de 9 a 19 h<br />
+18 de mayo<br />
+24 de septiembre<br />
+<br />
+<b>Precio</b><br />
+Colección temporal 12€<br />
+Exposición temporal 6,50€
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

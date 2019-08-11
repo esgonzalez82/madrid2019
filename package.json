@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "cordova-plugin-admobpro": "^2.31.6",
+    "cordova-plugin-compat": "^1.0.0",
+    "cordova-plugin-device": "^1.1.2",
+    "cordova-plugin-extension": "^1.5.4",
+    "cordova-plugin-geolocation": "^2.2.0",
+    "cordova-plugin-splashscreen": "^3.2.2",
+    "cordova-plugin-statusbar": "^2.1.3",
+    "cordova-plugin-whitelist": "^1.2.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-compat": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-admobpro": {},
+      "cordova-plugin-extension": {},
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "admob": "^5.5.0",
+    "cordova-android": "^8.0.0"
+  }
+}

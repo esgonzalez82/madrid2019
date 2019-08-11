@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Museo del Diseño<br />
+	<audio src="audios/barcelona037.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker037">Ver ubicación</button>
+<img src="images/037.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+<br /><br />
+El Museo del Diseño de Barcelona (Museu del Disseny de Barcelona) es el museo de las artes del objeto y del diseño, producto de la integración de las colecciones del Museu de les Arts Decoratives (artes decorativas y diseño industrial), el Museu de Ceràmica (cerámica), el Museu Tèxtil i d’Indumentària (textil e indumentaria) y el Gabinet de les Arts Gràfiques (artes gráficas) de la ciudad.<br />
+El museo está ubicado en el edificio del Disseny Hub Barcelona, en la Plaça de les Glòries y atesora un triple patrimonio:<br />
+—Las colecciones históricas de artes decorativas.<br />
+—Las colecciones de diseño.<br />
+—Las artes de autor de los siglos XX-XXI.<br />
+Barcelona es una ciudad históricamente ligada al diseño, con instituciones centenarias como el Fomento de las Artes Decorativas. Es por ello que el Ayuntamiento de Barcelona se planteó a principios de la década de los 2000 crear un solo centro, un espacio integral que permitiera que el público entendiera el diseño en su consideración más amplia.<br /><br />
+
+Es uno de los centros más nuevos de la ciudad al inaugurarse en 2014. Engloba un fondo rico de más de 70.000 objetos que van desde el siglo IV a. C. hasta la actualidad, con algunas colecciones significativas como los tejidos medievales y el vidrio catalán esmaltado del siglo XVI, además de las colecciones históricas en arte decorativas, las de diseño y las de autor. Asimismo, podemos encontrar un espacio de información y documentación que atesora más de 22.000 documentos. 
+Se compone de dos partes: una subterránea, que aprovecha el desnivel creado por la urbanización de la plaza y otra que emerge a 14,5 m. de altura, al nivel de la Plaça de les Glòries.<br /><br />
+
+<b>Horario</b><br />
+De martes a domingo, de 10 a 20 horas<br />
+Cerrado: 1 de enero, 1 de mayo, 24 de junio y 25 de diciembre, y lunes (excepto festivos).<br />
+<br />
+<b>Precios</b><br />
+Exposiciones permanentes<br />
+Entrada general: 6 €<br />
+Entrada reducida: 4 €<br />
+Exposición temporal<br />
+Entrada general: 4,40 €<br />
+Entrada reducida: 3 €<br />
+Entrada combinada exposiciones permanentes y exposición temporal<br />
+Entrada general: 8 €<br />
+Entrada reducida: 5,50 €<br />
+Entrada válida para 2 días dentro de los 6 meses siguientes a su compra.<br />
+<br />
+Entrada gratuita<br />
+Primer domingo del mes y domingo a partir de las 15:00 horas.<br />
+12 de febrero y 24 de septiembre<br />
+Menores de 16 años
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

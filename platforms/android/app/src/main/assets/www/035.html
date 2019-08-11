@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Casa Museo Gaudí<br />
+	<audio src="audios/barcelona035.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker035">Ver ubicación</button>
+<img src="images/035.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La Casa Museo Gaudí, situada dentro del recinto del parque Güell, en Barcelona, fue la residencia de Antoni Gaudí durante casi veinte años, desde 1906 hasta finales de 1925. El 28 de septiembre de 1963 se inauguró como museo y en la actualidad acoge una colección de muebles y objetos diseñados tanto por él como por sus colaboradores.<br />
+<br />
+A finales del siglo XIX, el empresario catalán Eusebi Güell i Bacigalupi promovió una urbanización privada en Barcelona que denominó Park Güell. El empresario encargó el proyecto al arquitecto Antoni Gaudí, y en 1900 se iniciaron las obras. Estaba prevista la creación de una urbanización para unas sesenta casas. Sin embargo, el Park Güell no tuvo éxito como proyecto inmobiliario y sólo se construyeron dos de las sesenta previstas, una de ellas, la Casa-Museo Gaudí. Las obras se detuvieron en 1914 y la urbanización nunca fue terminada.<br />
+<br />
+La Casa-Museo Gaudí fue proyectada por Francesc Berenguer i Mestres (1866-1914), amigo y mano derecha del arquitecto y se edificó entre en 1904 y en 1906. <br />
+En el año 1906, Antoni Gaudí compró la casa y la convirtió en su residencia. A mediados de aquel año, su padre Francesc Gaudí y su sobrina Rosa lo ocuparon. Pero Francesc murió en octubre del mismo año. La sobrina, con graves problemas de salud, murió seis años después. Así pues, Gaudí vivió veinte años en esta casa casi a solas. Unos meses antes de morir el año 1926, Gaudí abandonó su residencia del Park Güell y decidió instalarse en el taller que tenía a la Sagrada Familia. <br />
+<br />
+El arquitecto hizo donación de la casa por vía testamentaria a la Junta Constructora del Templo Expiatorio de la Sagrada Familia, que la vendió al matrimonio Chiappo Arietti. En 1960, la Asociación de Amigos de Gaudí promovió la compra de la casa a los descendientes del matrimonio para destinarla a museo. En el año 1963 consiguieron inaugurar esta nueva institución. Desde el primer momento Josep Mi. Garrut fue nombrado director de la Casa-Museo Gaudí. Con Enric Casanelles en el lado, y apoyados por todos los miembros de los Amigos de Gaudí, luchó para recrear el ambiente que rodeó al arquitecto mientras vivió. Además, consiguieron reunir una importante colección de muebles diseñados por Gaudí, así como objetos diversos y obras de algunos de sus colaboradores.<br />
+ <br />
+El año 1992 la Asociación de Amigos de Gaudí decidió traspasarla otra vez a la Junta Constructora del Templo de la Sagrada Familia, de la cual hoy día forma parte. Desde entonces, la Fundación ha trabajado para mejorar la conservación, la seguridad y la accesibilidad de la Casa Museo Gaudí, así como su museografía. <br />
+<br />
+El edificio consta de cuatro plantas. La planta baja y la primera son las dedicadas a la colección abierta al público. El sótano es de uso interno y la segunda planta acoge la Biblioteca Enric Casanelles. También se expone una importante muestra de mobiliario diseñado por Gaudí para edificios como la Casa Batlló, la Casa Calvet, la Casa Milà, la Casa Vicens y la cripta de la Colonia Güell, que junto con los elementos de forja diseñados también por el arquitecto son los objetos más valiosos del fondo de la colección. El fondo incluye, además, muebles, esculturas, pinturas, dibujos y otros objetos de colaboradores, que se exponen en las diversas salas del museo.<br />
+<br />
+<b>Horario</b><br />
+Octubre-marzo de 10 a 18h <br />
+Abril-septiembre de 9 a 20h<br />
+25 y 26 de diciembre y 1 y 6 de enero: de 10 a 14h<br />
+<br />
+<b>Precio</b><br />
+Obra y vida 24€<br />
+Casa 5,50€<br />
+<br />
+<b>Como llegar</b><br />
+Metro<br />
+L3 | Lesseps. Al salir del metro, hay que seguir la señalización que conduce al Park Güell.<br />
+<br />
+Autobuses<br />
+24 y 92 (entrada por la ctra. del Carmel)<br />
+32 y H6 (entrada por la c/ Olot)<br />
+116 Bus del Barrio (entrada por la c/ Olot)<br />
+<br />
+Web<br />
+http://www.casamuseugaudi.org/
+
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

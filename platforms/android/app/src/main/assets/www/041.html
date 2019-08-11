@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Plaza de San Felipe Neri<br />
+	<audio src="audios/barcelona041.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker041">Ver ubicación</button>
+<img src="images/041.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La plaza de San Felipe Neri (en catalán plaça de Sant Felip Neri) es una plaza particular de Barcelona, que recibe el nombre de la iglesia homónima de estilo barroco que la preside. Está en el Barrio Gótico, en el distrito de Ciudad Vieja. La mayor curiosidad es que actualmente muestra las erosiones causadas de un bombardeo.<br />
+<br />
+El 30 de enero de 1938 el ejército de Franco lanzó una bomba en este lugar; la consecuencia de la explosión fueron cuarenta y dos víctimas mortales, la mayoría niños de la guardería que se encontraba justo al lado y a los que seguramente la profesora había querido refugiar en el subterráneo de la Iglesia. Aparte de las muertes, también quedaron destruidos varios edificios de la zona, abriéndonse una explanada hasta entonces inexistente y que actualmente es la plaza de Sant Felip Neri. Pese a sufrir importantes daños, la iglesia resistió y permaneció en pie. Durante esta época ensayaron una espeluznante técnica para conseguir matar al mayor número de personas: se lanzaban ‘x’ cantidad de bombas, se producía una pausa y, cuando todo el mundo creía que las tropas habían marchado, se volvía a bombardear. A pesar de lo ocurrido, justo a la derecha se volvió a construir una guardería donde los niños juegan ajenos a lo ocurrido años atrás. En el centro de la construcción encontramos una placa colocada el 31 de enero de 2007 que conmemora lo ocurrido y tiene escrito: “En memoria de las víctimas del bombardeo de San Felipe Neri. Aquí murieron 42 personas -la mayoría niños- por acción de la aviación franquista del 30 de enero de 1938.“<br />
+<br />
+La iglesia de Sant Felip Neri es obra del arquitecto Pere Bertrán y se construyó entre los años 1721 y 1752 y es una de las pocas construcciones barrocas que quedan en la actualidad en la ciudad.<br />
+<br />
+En el centro de la plaza se encuentra una fuente octogonal obra de Joaquim Ros de Ramis. Justo encima de la fuente había una estatua de bronce de un niño estudiando que duró muy poco tiempo, porque fue robada y jamás se recuperó.<br />
+<br />
+Antoni Gaudí era un fiel amante de esta plaza. De hecho, se encontraba caminando hacia la iglesia de Sant Felip Neri cuando un tranvía acabó con su vida la mañana del 10 de junio de 1926.
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

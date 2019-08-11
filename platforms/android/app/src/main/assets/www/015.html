@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Plaza del Rey<br />
+	<audio src="audios/barcelona015.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker015">Ver ubicación</button>
+<img src="images/015.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La plaza del Rey se encuentra en el barrio gótico de Barcelona. Se trata de una plaza monumental, rodeada de edificios góticos y renacentistas, la mayor parte de los cuales forman parte del conjunto del Palacio Real Mayor. Este palacio se empezó a construir durante el siglo XI, pero realmente ganó protagonismo a partir del siglo XIII cuando los condes de Barcelona lo usaron como residencia así como posteriormente, los reyes de la Corona de Aragón. El gótico es el estilo predominante, aunque en la base del edificio se encuentran restos visigodos y romanos.<br />
+La actual Plaza del Rey tiene su origen en los antiguos corrales del Palacio Real y aunque quedaba cerrado por la muralla, se usó durante siglos como mercado en un espacio abierto al pueblo. Durante el reinado de Martín I en la segunda mitad del siglo XIV se llevó a cabo un proyecto de urbanización al cual se atribuye su actual disposición rectangular. Asimismo, se desplaza el mercado con objeto de crear un espacio apto para la celebración de Justas Medievales, enfrentamientos de lucha deportiva.<br />
+Entre los edificios más importantes se encuentran el Salón del Tinell, sobre el cual se levanta la torre del Mirador del Rey Martín. El mirador fue bautizado con el nombre del rey Martín, el Humano, pese a que éste murió en 1410 y la torre se levantó en 1555. La explicación es simple, el mirador se ubica en el mismo lugar que ocupaba otra torre, ya sí, coetánea al rey. Se dice que este mirador, que en origen tenía un tejado a cuatro aguas, era considerado en época medieval como el edificio más alto del mundo aunque esto no era cierto.<br />
+El Salón del Tinell fue mandado a construir por el rey Pedro el Ceremonioso entre los años 1359 y 1362 al maestro de obras Guillem Carbonell. Tradicionalmente, es en este salón donde se sitúa la entrevista entre Cristóbal Colón y los Reyes Católicos, tras la llegada de Colón de su primer viaje a América en 1493. 
+A un lado de este edificio, y levantada sobre la antigua muralla romana, podemos ver la capilla real de Santa Àgata, del siglo XIV. En su interior se esconde el valioso retablo del Condestable, de Jaume Huguet. Fue obra del rey Jaime II de Aragón y su esposa Blanca de Nápoles. 
+El edificio que hay delante es el Palau del Lloctinent (Palacio del Lugarteniente), del año 1549, encargado por el Rey Carlos I a Antoni Carbonell. Desde 1836 hasta 1994 fue sede del archivo General de la Corona de Aragón. <br />
+La Plaza la cierra el edificio de la Casa Padellàs. Esta es del siglo XVI y curiosamente fue trasladada piedra a piedra desde su emplazamiento original en la calle Mercaders, también en el barrio gótico. Fue en las obras de reubicación de este edificio (1930-31) cuando se descubrieron en el subsuelo  los restos de la antigua ciudad romana, por eso desde 1943 es la sede del Museo de Historia de la Ciudad de Barcelona.<br />
+A mediados del siglo XIX el ayuntamiento encargó al arquitecto municipal Francesc Daniel Molina la reforma de la plaza, que sufría la decadencia de los edificios del entorno. Molina construyó una fuente monumental, de estilo neogótico, que fue inaugurada el 16 de octubre de 1853. Entre la fuente y la capilla de Santa Ágata se instaló una columna, reconstruida con los restos de otras dos del antiguo Templo de Augusto.<br />
+Entre 1931 y 1934 se llevó a cabo una nueva reforma a cargo de Agustí Duran i Sanpere, que dio a la plaza, en gran medida, su aspecto actual. Se suprimieron los árboles, así como también la fuente neogótica de Molina. En esta misma época fue cuando se trasladó aquí la Casa Padellàs. En 1956 la columna romana fue trasladada a la sede del Centro Excursionista de Cataluña, donde se conservan los otros restos del Templo de Augusto. En 1986 se instaló en la plaza la escultura Topos V, una obra de acero fundido de Eduardo Chillida.<br />
+La plaza es bien de Interés Cultural desde 1931.<br />
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

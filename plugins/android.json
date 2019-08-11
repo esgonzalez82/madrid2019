@@ -1,0 +1,37 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    },
+    "cordova-plugin-admobpro": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "xdk.intel.cordova.template.lite"
+    }
+  }
+}

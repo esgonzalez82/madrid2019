@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Teatro Griego<br />
+	<audio src="audios/barcelona038.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker038">Ver ubicación</button>
+<img src="images/038.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Teatro Griego (en catalán Teatre Grec) es un teatro al aire libre ubicado en la montaña de Montjuic.  A pesar de su nombre, no se trata de una construcción realizada por los antiguos griegos. Fue diseñado y construido en el año 1929 con motivo de la Exposición Internacional de Barcelona por los arquitectos Ramon Reventós y Nicolau Maria Rubió i Tudurí, que se inspiraron en la planta del teatro de Epidauro. El espacio se inauguró durante el III Congreso Mundial del Teatro de aquel año con la lectura de unos poemas a cargo de la actriz Josefina Tapias.<br />
+<br />
+Los éxitos ocasionales obtenidos por grandes nombres de la escena no impidieron que el teatro quedara cerrado en 1969.<br />
+<br />
+Maria Lluïsa Oliveda y Ramir Bascompte consiguieron reabrir el teatro y programarlo durante tres años, de 1973 a 1975. Pero el gran momento del escenario de Montjuïc llegaría en 1976, un año después de la muerte de Franco.Fue en ese momento cuando la Assemblea d’Actors i Directors, representantes de la nueva escena independiente catalana, programaron la primera edición del Grec Festival de Barcelona.<br />
+<br />
+Música, teatro y danza llenan cada verano desde aquel año (con la única excepción de 1977, cuando el festival no se celebró) el Teatre Grec de Montjuic, que hoy es todo un símbolo de la vida cultural barcelonesa.<br />
+<br />
+El recinto, de 460 m², puede acoger unos 1900 espectadores. Junto al teatro hay unos jardines, proyectados por Rubió i Tudurí y Jean-Claude Nicolas Forestier, y un pabellón que se destinaba a conciertos musicales y hoy acoge un restaurante.
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

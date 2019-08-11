@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Fundación Joan Miró<br />
+	<audio src="audios/barcelona031.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker031">Ver ubicación</button>
+<img src="images/031.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La Fundación Joan Miró fue inaugurada el 10 de junio de 1975 y posee algunas de las obras más representativas de este pintor nacido en Barcelona en 1893. 
+Está ubicada en la montaña de Montjuic, en un edificio obra del arquitecto Josep Lluís Sert, amigo personal de Miró y quien ya le había construido su estudio en Mallorca. El arquitecto concibió la obra como un espacio abierto, con grandes terrazas y patios interiores que permitieran una correcta circulación de los visitantes. En 1988 y 2000 se amplió para dar cabida a nuevos servicios y aumentar el espacio expositivo. Los proyectos de los nuevos espacios corrieron a cargo de Jaume Freixa, discípulo y amigo de Sert, y actual presidente de la Fundación.<br />
+<br />
+La Fundació Joan Miró fue creada por el propio artista con un fondo inicial constituido mayoritariamente por su colección privada, con la voluntad de establecer en Barcelona un espacio mironiano de referencia internacional, que permitiera conocer las tendencias del arte contemporáneo y además garantizaría que sus obras estuvieran siempre al alcance del público.<br />
+<br />
+Con más de 14.000 piezas, la colección permite un completo recorrido por la trayectoria artística de Miró y de las muchas y diversas técnicas utilizadas a lo largo de su carrera. <br />
+217 pinturas, 179 esculturas, diferentes grabados y textiles y  más de 8.000 dibujos permiten conocer a fondo su proceso creativo. Las obras que actualmente conforman la colección proceden de la donación efectuada por el artista en 1975, a la que se han ido sumando donaciones y depósitos de su esposa Pilar Juncosa, Joan Prats, varios miembros de la familia Miró y Kazumasa Katsuta, así como de otras colecciones públicas y privadas. <br />
+<br />
+La colección de la pinacoteca permite realizar un viaje a través de la vida artística de Miró, desde sus primeros esbozos hasta los cuadros de grandes dimensiones que caracterizan la última etapa de su vida. La exposición permanente está organizada en ocho espacios distintos, dedicando cada uno de ellos a una parte del arte de Miró. Así se encuentran espacios dedicados a la cerámica, los tapices, la escultura o la pintura. Por su significación artística y poética, merecen especial atención las pinturas vinculadas al surrealismo y las obras en torno a la Guerra Civil española.<br />
+<br />
+Además de las obras de Miró, el museo también expone una colección de arte contemporáneo formada por piezas procedentes de donaciones y préstamos de otros artistas de renombre.<br />
+Con un enfoque interdisciplinario, la Fundación combina la organización de exposiciones temporales de artistas del siglo XX y XXI con actividades académicas y proyectos en colaboración con otras instituciones y entidades del país. <br />
+<br />
+<b>Horario</b><br />
+Martes, miércoles y viernes<br />
+De noviembre a marzo de 10 a 18h<br />
+De abril a octubre de 10 a 20h<br />
+Jueves de 10 a 21h<br />
+Sábado de 10 a 20h<br />
+Domingos de 10 a 15 h<br />
+Lunes no festivos cerrado<br />
+
+<b>Precio</b><br />
+Entrada general Colección Joan Miró + exposición temporal <br />
+Adulto 12€<br />
+Reducida 7€<br />
+Exposición temporal <br />
+Adulto 7€<br />
+Reducida 5€<br />
+Espai 13 2,50€<br />
+<br />
+Entrada gratuita<br />
+Menores de 15 años y parados (acreditados)<br />
+<br />
+Pase anual 13€<br />
+Servicio de guía multimedia 5€<br />
+Articket BCN 30€<br />
+<br />
+<b>Como llegar</b><br />
+Autobús<br />
+55 y 150 (bus Parc de Montjuïc)<br />
+Transports Metropolitans de Barcelona<br />
+<br />
+Funicular de Montjuïc<br />
+Paral·lel - Parc de Montjuïc<br />
+(metro Paral·lel, tarifa integrada)<br />
+Transports Metropolitans de Barcelona<br />
+<br />
+Transporte privado<br />
+No hay parking privado<br />
+Se recomienda transporte público
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+
+html, body{
+    padding: 0; margin: 0;
+}
+html, body, #map{
+    height: 100%;
+}
+.leaflet-center {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.leaflet-control-geosearch, .leaflet-control-geosearch ul {
+	border-radius: 7px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.25);
+	margin: 10px 0 0 0;
+	padding: 5px;
+	width: 100%;
+	height: auto;
+}
+.leaflet-control-geosearch-msg ul {
+	list-style: none;
+	display: none;
+	height: auto;
+	background: none;
+	padding: 0;
+}
+.leaflet-control-geosearch ul li {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    margin: 2px 0;
+    padding: 4px;
+    font: 12px arial;
+    text-indent: 4px;
+}
+.leaflet-container .leaflet-control-geosearch input {
+	width: 100%;
+	height: 28px;
+	padding: 0;
+	text-indent: 8px;
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 4px;
+	border: none;
+}
+#mensaje{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.centrar{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 10px;
+	bottom: 70px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;	
+	border-radius: 6px 6px 6px 6px;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(125,119,125,1);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(125,119,125,1);
+	box-shadow: 0px 0px 3px 1px rgba(125,119,125,1);
+	border: 0px solid #000000;
+	background-image: url("../geo.png");
+	background-color: white;
+	cursor:pointer;
+	
+}
+
+#mensaje{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;	
+}
+#botonera{
+	width: 100%;
+	height: 52px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	background-color: white;
+	padding: opx;
+	-webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+}
+#listado{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	background-color: white;
+	padding: 0px;
+}
+#listado_titulo{
+	width: 100%;
+	height: 50px;
+	background-color: #999999;
+	color: white;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+}
+#listado_imp{
+	width: 100%;
+	height: 620px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	background-color: #f8f8f8;
+	color: #C25F5F;
+	position: relative;
+}
+#listado_otros{
+	width: 100%;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	background-color: #f8f8f8;
+	color: #5F7FC2;
+	position: relative;
+}
+.btn-audios{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 18px;
+	color: #666666;
+	background-color: #f8f8f8;
+	border: #ffffff;
+	border-bottom: 2px solid #C25F5F;
+}
+
+.btn-audios-otros{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 18px;
+	color: #666666;
+	background-color: #f8f8f8;
+	border: #ffffff;
+	border-bottom: 2px solid #5E8493;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+#visita_01{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #f8f8f8;
+	padding: 0px;
+
+}
+.audio{
+	background-color: #fafafa;
+	width: 100%;
+	height: 80px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #666666;
+}
+
+.contenido p{
+	padding: 10px;
+	text-align : justify;
+}
+
+.detalle{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: #333333;
+	padding: 10px 10px 100px 10px;
+
+}
+
+.detalleinfo{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: #333333;
+	padding: 10px;
+	text-align: center;
+}

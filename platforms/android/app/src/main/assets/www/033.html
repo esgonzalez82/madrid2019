@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Castell de Montjuic<br />
+	<audio src="audios/barcelona033.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker033">Ver ubicación</button>
+<img src="images/033.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El castillo de Montshuic es una antigua fortaleza militar situada en la parte más alta de la montaña de Montshuic.
+Fue declarado Bien Cultural de Interés Nacional (BCIN) en 1988.<br />
+La ubicación privilegiada del Castillo, permite al visitante gozar de unas vistas inmejorables sobre Barcelona y sus alrededores. La terraza del patio de armas se convierte en un mirador de 360º con vistas sobre la ciudad, el puerto, el Mediterráneo, la costa barcelonesa y el Baix Llobregat.<br />
+<br />
+La montaña de Montshuic ha sido habitada de un modo más o menos continuo desde la época prehistórica hasta el día de hoy. Los primeros restos datan de los siglos VII y VI a.C. Pero no fue hasta 1929 que se realizaron una serie de descubrimientos de época romana.<br />
+<br />
+Antes del Castillo, en la cima de Montshuic había un faro o torre de vigía.. Era habitado por un marinero que hacía la función de vigilante y tenía como misión alertar a la ciudad en caso de llegada de naves hostiles a la costa, mediante un sistema de velas durante el día, y de fuego durante la noche. <br />
+<br />
+Como consecuencia del inicio de la Guerra dels Segadors se amuralló el faro con un fortín, lo cual representó el inicio de la militarización de la montaña. Desde esta estructura defensiva se rechazó a las tropas de Felipe IV en la llamada Batalla de Montshuic. El fortín original se convirtió en castillo en 1694.<br />
+<br />
+Durante la Guerra de Sucesión, tomo el poder del castillo Felipe V y  fue entregado a las tropas borbónicas. <br />
+<br />
+Entre 1779 y 1799 se realizaron diversas obras; el castillo tomó entonces la forma que tiene en la actualidad. <br />
+En 1842, durante la regencia de Espartero, la ciudad de Barcelona fue bombardeada desde el castillo para conseguir así someter una revuelta. En 1843, el general Prim ordenó un nuevo bombardeo de la ciudad. A partir de finales del siglo XIX, el castillo albergó a las víctimas tanto de la represión política social como de la lucha obrera. En él fueron encarcelados y torturados los obreros involucrados en la ola de violencia anarquista de la década de 1890, en especial los numerosos detenidos tras el Atentado de la Procesión del Corpus. <br />
+En el castillo se encerró también a los detenidos durante la Semana Trágica; aquí fue fusilado el pedagogo libertario y creador de la Escuela Moderna  Francisco Ferrer Guardia. <br />
+La insurrección del 6 de octubre de 1934, encabezada por el presidente Lluís Companys y en la que se proclamó el Estado Catalán, devolvió el protagonismo al Castillo. Tras el estallido de la Guerra Civil entre 1936 y 1939, los frentepopulistas lo convirtieron en prisión y lugar de fusilamiento para los alzados o los simpatizantes de la "causa nacional", haciéndose famoso el Foso de Santa Elena, donde fueron asesinados todos aquellos que fueran considerados de derecha. Durante la represión franquista fueron ejecutados más de 4.000 presos republicanos y catalanistas en el castillo, el más conocido fue el presidente de la Generalidad de Cataluña, Lluís Companys.<br />
+Hasta 1960, año en que fue cedido a la ciudad, el castillo sirvió como prisión militar. Después de tres años de obras para acondicionarlo, Franco presidió la inauguración del nuevo museo militar y se cedió a Barcelona el recinto pero no el museo que alberga.<br />
+Tras largas controversias, una orden ministerial del 27 de abril de 2007 modificó la cesión del Castillo de Montshuic al Ayuntamiento de Barcelona, y después de diversas gestiones, este volvió definitivamente a la ciudad como equipamento municipal y, por tanto, como propiedad de toda la ciudadanía.<br />
+<br />
+<b>Horario</b><br />
+Del 1 de noviembre al 28 de febrero<br />
+Abierto de lunes a domingo de 10 h a 18 h.<br />
+Festivos incluidos.<br />
+<br />
+Del 1 de marzo al 31 de octubre<br />
+Abierto de lunes a domingo de 10 h a 20 h.<br />
+Festivos incluidos.<br />
+<br />
+Días de cierre <br />
+1 de enero y 25 de diciembre<br />
+<br />
+Días de puertas abiertas<br />
+12 de febrero<br />
+18 de mayo<br />
+24 y 25 de septiembre<br />
+<br />
+<b>Precio</b><br />
+Entrada General: 5€.<br />
+Entrada Reducida: 3€.<br />
+ <br />
+Entrada Gratuita<br />
+Todos los domingos a partir de las 15h<br />
+Los primeros domingos de mes todo el día.<br />
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>
