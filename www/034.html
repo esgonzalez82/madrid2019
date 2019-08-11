@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Jardín Botánico<br />
+	<audio src="audios/barcelona034.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker034">Ver ubicación</button>
+<img src="images/034.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Jardín Botánico de Barcelona está situado en la montaña de Montjuïc, entre el castillo y el Estadio Olímpico Lluís Companys. Su forma recuerda a un gran anfiteatro orientado hacia el noroeste, y tiene una superficie de aproximadamente 14 hectáreas.<br />
+Anteriormente a la apertura de este jardín botánico existía en la ciudad de Barcelona el que actualmente se conoce como Jardín Botánico Histórico, de 4 hectáreas, que fue reabierto al público en octubre de 2003. Este jardín fue creado el año 1930 por el Dr. Pius Font i Quer en el parque de Montjuic, y es reconocible ya que presenta los árboles más grandes que se encuentran en la ciudad.<br />
+<br />
+Debido a las obras en Montjuic para los Juegos Olímpicos de Barcelona de 1992, se tuvieron que abrir nuevos accesos, como una escalera mecánica que cortó por la mitad el jardín, lo que originó que éste debiera de cerrar al público. Con esta situación se propuso la creación de un nuevo jardín botánico para Barcelona, y es así como surge el actual Jardín Botánico, abierto al público el 18 de abril de 1999. El proyecto lo realizó el Ayuntamiento de Barcelona y cumple con dos funciones principales: contribuir a la preservación de las especies vegetales para perpetuar su futuro y cumplir con una función divulgativa para aumentar la sensibilidad ciudadana hacia el respeto a la naturaleza y el valor de la biodiversidad.<br />
+El Jardí Botànic quiere mostrar la gran similitud de los paisajes californianos, chilenos, sudafricanos y australianos con los de la cuenca mediterránea mediante una amplia representación de especies vegetales de clima mediterráneo, que se caracteriza por un largo verano seco, de inviernos suaves y lluvias en el otoño y la primavera. En esta última estación florecen la mayor parte de plantas mediterráneas. <br />
+Las plantas se distribuyen agrupadas, según estas cinco regiones del mundo. Las sendas nos permiten acceder de zona en zona, comenzando por las Islas Canarias situadas a la entrada y subir al Mediterráneo occidental reconocible por el instituto botánico.<br />
+Cada año se reproducen en los viveros y se plantan en el Jardín Botánico nuevas especies, algunas de las cuales no se adaptan al clima o a las características de la tierra y desaparecen de la colección. <br />
+<br />
+Desde el 2003, encontramos en lo alto del Jardín Botánico un moderno edificio: el Instituto Botánico de Barcelona. Se fundó en 1934 y desde 1942 es un centro mixto formado por el Consejo Superior de Investigaciones Científicas y el Ayuntamiento de Barcelona.<br />
+<br />
+<b>Horario</b><br />
+De octubre a febrero<br />
+De martes a viernes de 10h a 18h<br />
+Sábado de 10h a 19h<br />
+Domingos y festivos de 10h a 20h<br />
+<br />
+De marzo a septiembre<br />
+De martes a sábado, de 10h a 19h<br />
+Domingos y festivos de 10h a 20h<br />
+Días de cierre<br />
+Lunes no festivos<br />
+1 de enero<br />
+1 de mayo<br />
+24 de junio y 25 de diciembre<br />
+<br />
+Entrada libre<br />
+El primer domingo de mes todo el día<br />
+Todos los domingos del año a partir de las 15h<br />
+12 de febrero, Santa Eulàlia<br />
+18 de mayo<br />
+Día Internacional de los Museos<br />
+24 de septiembre, la Mercè<br />
+<br />
+<b>Precio</b><br />
+Entrada normal:<br />
+Museu de Ciències Naturals: 6€<br />
+Exposición temporal: 6,50€<br />
+Combinada Museu de Ciències Naturals – Jardí Botànic: 7€<br />
+Combinada exposición permanente Planeta Vida – exposición temporal: 10,50€<br />
+<br />
+Entrada reducida:<br />
+Museu de Ciències Naturals: 2,70€<br />
+Exposición temporal: 4,50€<br />
+Combinada Museu de Ciències Naturals – Jardí Botànic: 3,50€<br />
+Combinada exposición permanente Planeta Vida – exposición temporal: 6,50€<br />
+<br />
+Entrada reducida<br />
+Las personas de 16 a 29 años<br />
+Las personas de 65 años o más<br />
+Las personas en paro o poseedoras de la tarjeta rosa reducida<br />
+Las familias, con un máximo de dos acompañantes adultos. Mínimo un miembro menor de 16 años<br />
+Los poseedores de carnet de familia numerosa<br />
+Los poseedores de carnet de familia monoparental<br />
+Los poseedores del carnet de Bibliotecas de Barcelona<br />
+Los grupos de diez o más personas<br />
+En todos estos casos debe acreditarse la condición que da derecho a la entrada reducida<br />
+<br />
+Entrada Gratuita<br />
+Todos los domingos a partir de las 15h<br />
+Los primeros domingos de mes todo el día<br />
+Los menores de dieciséis años<br />
+<br /><br />
+https://museuciencies.cat
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

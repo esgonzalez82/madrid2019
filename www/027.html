@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Palau Sant Jordi<br />
+	<audio src="audios/barcelona027.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker027">Ver ubicación</button>
+<img src="images/027.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+<br /><br />
+El Palau Sant Jordi (Palacio San Jorge) es un pabellón multifuncional situado en la montaña de Montjuic en Barcelona.  Diseñado por el arquitecto japonés Arata Isozaki, se construyó con motivo de los Juegos Olímpicos de Barcelona 92 en la montaña de Montjuïc, formando el denominado Anella Olímpica (Anillo Olímpico) junto con el Estadi Olímpic Lluís Companys, la explanada Olímpica y el Sant Jordi Club. <br />
+<br />
+Es la instalación olímpica más utilizada de Barcelona, ya que acoge todo tipo de acontecimientos deportivos, conciertos y espectáculos. Tiene un aforo de hasta 16.159 espectadores sentados en actos deportivos y una capacidad máxima de hasta 17.960 persones en conciertos.<br />
+<br />
+Inaugurado oficialmente el 21 de Septiembre de 1990, el Palau ha sido considerado desde su construcción una auténtica obra maestra de la arquitectura y la ingeniería moderna que destaca por su espectacular diseño y también por sus prestaciones tecnológicas. El elemento que más le distingue es la cúpula, construida a nivel del suelo y elevada en el transcurso de 10 días por 12 gatos hidráulicos hasta llegar a su total colocación y posición actual. La estructura utilizada, así como los materiales, dan una gran versatilidad a este edificio polivalente.<br />
+Durante los tres días posteriores a su inauguración, se organizaron unas jornadas para abrir las puertas del recinto recibiendo la visita de más de 270.000 ciudadanos que quisieron ver de cerca el Palau Sant Jordi. <br />
+Iniciados los Juegos Olímpicos, el Palau Sant Jordi, fue el principal recinto cubierto. Acogió la competición de gimnasia artística masculina y femenina; las finales de hándbol masculino y femenino así como de voleibol. Igualmente, también fue sede de los Juegos Paralímpicos de Barcelona 92 de los cuales acogió las competiciones de tenis mesa y voleibol.<br />
+<br />
+El reto del Palau Sant Jordi era el de mantenerse como una instalación de referencia una vez celebrados los Juegos Olímpicos, un reto que se ha cumplido con creces ya que acoge regularmente espectáculos de todo tipo, inclyuendo eventos deportivos, musicales y sociales. Entre los Campeonatos deportivos que ha acogido el Palau Sant Jordi , caben destacar, el Campeonato Mundial de Atletismo Indoor 1995, la fase final del Eurobasket 1997, dos Final Four de la Euroleague de Básquet (1998 y 2011), dos finales de la Copa Davis (2000 y 2009), dos campeonatos del Mundo de Natación (2003 y 2013), y diferentes partidos amistosos de la NBA, y más recientemente el Mundial de Baloncesto 2014. <br />
+También han actuado en el Palau Sant Jordi artistas de talla internacional  como Bruce Springsteen, U2, Queen, Iron Maiden, Coldday, Shakira, Madonna, Lady Gaga, Rihanna y Elton John; y nacionales como Joan Manuel Serrat, Estopa, David Bisbal, Alejandro Sanz y El Canto del Loco entre otros muchos.<br />
+<br /><br />
+Como llegar<br />
+Metro<br />
+Metro: L1 i L3 (Pl. Espanya)<br />
+FGC: L8, S33, S4, S8, R5, R50, R6, R60.<br />
+<br />
+Autobús<br />
+Los autobuses con parada en la Plaça Espanya que permiten acceder a la Anella Olímpica son:<br />
+150: desde Plaça Espanya/Ma. Cristina. Parada en Avda. de l’ Estadi<br />
+13: desde Plaça Espanya. Parada en el Estadi Olímpic<br />
+55: desde C/ Lleida/Avda. Paral.lel. Parada en Avda.dde l’Estadi / Passeig Olímpic<br />
+<br />
+Fonicular<br />
+Conecta con las líneas de metro L3 y L2. Hay que andar unos 10/15 minutos.<br />
+<br />
+A pié<br />
+Desde la Plaça Espanya se puede acceder a la Anella Olímpica por las escaleras mecánicas que permiten el acceso desde la Avda. Maria Cristina hasta la Avda. de l’Estadi.<br />
+<br />
+Coche<br />
+En el caso  de utilizar vehículo privado, se recomienda el acceso al Palau Sant Jordi por la C/ del Foc.<br />
+Amplias zonas de aparcamiento disponibles.<br />
+<br />
+https://www.palausantjordi.cat/es/
+<br />
+<br />
+
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

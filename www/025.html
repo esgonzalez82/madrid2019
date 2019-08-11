@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Camp Nou<br />
+	<audio src="audios/barcelona025.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker025">Ver ubicación</button>
+<img src="images/025.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Estadio Camp Nou es un recinto deportivo propiedad del Fútbol Club Barcelona, ubicado en el distrito de Les Corts de la ciudad de Barcelona. Fue inaugurado el 24 de septiembre de 1957. Catalogado por la UEFA con la máxima distinción,​ es el estadio con mayor capacidad de Europa y el quinto de fútbol del mundo, con un aforo actual de 99 354 espectadores.<br />
+El viejo campo de Les Corts, inaugurado en 1922, vivió diversas remodelaciones para acoger una masa azulgrana que no paraba de crecer. El club respondió a esta demanda con diversas ampliaciones, tanto del gol sur en 1946 como del gol norte en 1943, o de la capacidad de la tribuna en 1945. Asimismo, cada vez era más claro que había la necesidad de plantearse la construcción de un campo nuevo.<br />
+La llegada del jugador Kubala creó unas enormes expectativas. También fueron muy decisivas en esta misma dirección las dos Ligas ganadas consecutivamente los años 1947-48 y 1948-49, antes de la incorporación del crack húngaro. La victoria de Francesc Miró-Sans en las elecciones a la presidencia del FC Barcelona (14 de noviembre de 1953) fue también muy importante en este sentido. El nuevo presidente era un fuerte defensor de la rápida construcción de un nuevo estadio. Por eso fue una de las primeras cosas que decidió: emplazar el futuro estadio en los terrenos adquiridos en 1950. Así, el 28 de marzo, ante una multitud de 60.000 barcelonistas, se colocó la primera piedra del Camp Nou. Fue bajo la presidencia del gobernador civil Felipe Acedo Colunga y con la bendición del arzobispo de Barcelona, Gregorio Modrego.<br />
+El proyecto fue encargado al arquitecto Francesc Mitjans, primo hermano de Miró-Sans y vecino suyo. El estadio fue inaugurado el 24 de septiembre de 1957 (Día de la Mercè, patrona de Barcelona). Se organizaron una serie de actos conmemorativos y un partido de fútbol amistoso entre el FC Barcelona y el Legia de Varsovia, que concluyó con victoria del conjunto local por 4-2.<br />
+Cuando se inauguró, el Camp Nou tenía una capacidad para 93.053 espectadores . Los principales materiales empleados en su construcción habían sido el hormigón y el hierro. Desde aquel año de 1957 el Estadio ha experimentado varias reformas y mejoras.<br />
+En el año 1982 se amplió la capacidad del Estadio en 22.150 plazas nuevas en la tercera grada. Así, el aforo quedaba en unas 115.000 localidades. En el año 1982, el Camp Nou fue la sede de la ceremonia y el partido inaugural del Mundial de España. Dos años más tarde, en 1984, se inauguraba el Museo del Club.<br />
+Finalmente, antes del cambio de siglo se reconvertirían las localidades de pie en asientos. De esta manera, el aforo quedaba en los cerca de 99.354 asientos que tiene en estos momentos.<br />
+A pesar de que inicialmente su nombre era Estadi del FC Barcelona, a nivel popular rápidamente se rebautizó como 'Camp Nou', ya que el estadio sustituía al antiguo campo de Les Corts. En la temporada 2000/2001, se oficializó el nombre de Camp Nou después de una consulta popular entre los socios del club.
+El estadio tiene una altura máxima de 48 metros y una superficie de 55.000 metros cuadrados (250 metros de longitud y 220 de anchura). Siguiendo la normativa de la UEFA, el terreno de juego hace 105 metros x 68.<br />
+Entre las instalaciones y dependencias que hay en el interior del estadio destacan: una pequeña capilla ubicada al lado de los vestuarios, los palcos, la sala VIP y la de prensa, diversos platós de televisión, las cabinas de prensa, las oficinas de servicios técnicos. También el Centro de Medicina Deportiva y la Unidad de Control Operativo (UCO). Asimismo, encontramos el museo del FC Barcelona, que es el más visitado de Cataluña.<br />
+Gracias a los últimos títulos, el Estadio del Fútbol Club Barcelona se ha convertido en uno de los lugares más visitados de España.<br />
+<br />
+<b>Horario</b><br />
+Desde el 2 de abril hasta el 7 de octubre<br />
+De lunes a sábado de 10 a 20h.<br />
+Domingos y festivos de 10 a 14:30h.<br />
+Resto del año<br />
+De lunes a sábado de 10 a 18:30h.<br />
+Domingos y festivos de 10 a 14:30h.<br />
+*Puede sufrir cambios<br />
+<br />
+<b>Precio</b><br />
+Adultos: 25€.<br />
+Estudiantes: 20€.<br />
+Niños desde 6 hasta 13 años: 20€.<br />
+Entrada gratuita<br />
+Menores de 6 años.<br />
+<br />
+Transporte<br />
+Metro: Palau Reial, Maria Cristina y Les Corts, línea 3; Badal y Collblanc, línea 5.<br />
+Autobús: líneas 7, 15, 33, 43, 54, 56, 57, 59, 63, 67, 70, 72, 74, 75, 78, 113 y 157.<br />
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

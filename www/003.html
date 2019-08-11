@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+Puerto Olímpico de Barcelona
+<br />
+	<audio src="audios/barcelona003.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker003">Ver ubicación</button>
+<img src="images/003.jpg"  width="100%"><br />
+<!-- 500x300 -->
+</div>
+
+<div class="detalle">
+El Puerto Olímpico de Barcelona es un puerto deportivo que está ubicado frente a la Villa Olímpica, entre las playas de la Somorrostro y Nova Icària, en el distrito de San Martín.<br />
+Es uno de los puertos deportivos más reputados de la costa mediterránea además uno de los principales centros turísticos y de ocio de la ciudad. De día se puede comer en cualquiera de los restaurantes con especialidades del mar y de noche disfrutar de la amplia oferta nocturna.<br />
+Construído en 1991 en paralelo a la reforma de esta zona de Barcelona, el puerto fue proyectado por los arquitectos Oriol Bohigas, Josep Martorell, David Mackay y Albert Puigdomènech. Era necesario dotar a la ciudad de un puerto deportivo que estuviera a la altura y que fuera la sede de las competiciones de vela de los Juegos Olímpicos de 1992. <br />
+Tiene una capacidad de 743 amarres. Está abierto las 24 horas del día todos los días del año. Cuenta además con servicio de agua, electricidad, instalaciones sanitarias, centro comercial, estación meteorológica y gasolinería para las embarcaciones.<br />
+El Puerto Olímpico también dispone de varias instituciones de servicio al navegante, entre ellas las más destacables son: La Capitanía (es la dirección del Puerto y es desde donde se controla directamente el tránsito diario del puerto; además se encarga del alquiler de los amarres y de las estancias en el varadero), el Centro Municipal de Vela (escuela de vela para todo tipo de público) y el Club de Mar Port Olímpic (es el club de navegantes de crucero; organiza regatas,así como también charlas y eventos de encuentro para armadores, regatistas y navegantes).<br />
+Uno de los símbolos más representativos del Puerto Olímpico son las dos enormes torres situadas junto al mar del Hotel Arts y la Torre Mapfre.<br />
+El Puerto Olímpico de Barcelona cuenta además con la zona comercial Marina Village, un moderno centro comercial con decenas de tiendas de ropa de primeras marcas y algunos restaurantes.
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

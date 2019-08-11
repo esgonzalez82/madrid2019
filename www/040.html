@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Palau Güell<br />
+	<audio src="audios/barcelona040.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker040">Ver ubicación</button>
+<img src="images/040.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+<br /><br />
+El Palacio Güell (en catalán Palau Güell) es un edificio diseñado por Antoni Gaudí y encuadrado en la corriente del modernismo catalán. Está situado en la calle Nou de la Rambla de Barcelona. Fue el primer encargo que el joven arquitecto recibió de Eusebio Güell, un industrial, político y mecenas que se convirtió en su cliente más importante y también en uno de sus mejores amigos.<br />
+El edificio, que se construyó entre 1886 y 1890, contiene la esencia de la obra de Gaudí y es imprescindible para entender su arquitectura. Para este proyecto contó con la colaboración de Francesc Berenguer, uno de sus más fieles ayudantes. Gaudí supo diseñar un palacio funcional adaptado a las necesidades de la vida privada de la familia y a la intensa vida social y cultural que acogió. Así, introdujo en el proyecto del palacio soluciones muy imaginativas, una renovadora concepción del espacio y el tratamiento de la luz, y detalles ornamentales de forja, cerámica, vidrio, piedra y madera de gran originalidad y riqueza. Esta obra pertenece a la etapa orientalista de Gaudí (1883-1888), inspirada en el arte del Próximo y Lejano Oriente (India, Persia, Japón), así como en el arte islámico hispánico, principalmente el mudéjar y nazarí.<br />
+Del conjunto de la fachada del magnífico palacio destacan las puertas de entrada, que en su parte superior presentan unas rejas caladas de hierro forjado, que representan dos serpientes que con sus colas forman las letras E y G (de Eusebi Güell), mientras que entre las puertas se sitúa otra celosía de hierro ornamentada con el escudo de Cataluña y un yelmo con un ave fénix, obra de Joan Oñós.<br />
+El interior del edificio está concebido para armonizar la vida pública y la privada, el área de la familia y la de servicios. Para ello, el vestíbulo de la planta baja conecta de forma óptima con las diversas partes del edificio: en el centro se encuentra la escalera principal, al fondo la cochera y el acceso al sótano, en el lado este la portería y en el oeste la escalera de servicio y el ascensor. Siguiendo la escalera principal se llega primero al entresuelo, donde a la derecha se hallaba el despacho del señor Güell, más la biblioteca y las estancias de administración y archivo; y a la izquierda un vestíbulo y una sala de descanso.
+El palacio se convirtió en la vivienda de la familia Güell López hasta que se trasladaron al Park Güell.<br />
+En 1945, la hija menor de Eusebi Güell, Merce Güell López, cedió el palacio Güell a la diputación de Barcelona para usos culturales.
+El palacio Güell fue declarado patrimonio de la humanidad por la Unesco en 1984, en reconocimiento a su valor universal excepcional.
+Es el único ejemplo de arquitectura doméstica que gaudí completó y que no ha sufrido modificaciones esenciales.<br /><br />
+
+<b>Horario</b><br />
+Horario de verano<br />
+del 1 de abril al 31 de octubre de 10 a 20 horas<br />
+(cierre de las taquillas a las 19 h)<br /><br />
+Horario de invierno<br />
+del 1 de noviembre al 31 de marzo de 10 a 17.30 horas<br />
+(cierre de las taquillas a las 16.30 h)<br />
+Cerrado
+lunes no festivos, 25 y 26 de diciembre, 1 y 6 de enero y la tercera semana de enero.<br /><br />
+
+ 
+<b>Precios</b><br />
+Entrada general 12€.<br />
+Entrada reducida 9€.<br />
+Entrada mini 5€.<br /><br />
+
+Entrada gratuita (incluye audioguía del palacio)<br />
+Primer domingo de cada mes<br />
+Parados residentes en el Estado español. <br />
+Niños menores de 10 años.  <br />
+12 de febrero (Fiestas de Santa Eulàlia)<br />
+23 de abril (Sant Jordi), Noche de los Museus<br />
+11 de septiembre (Diada Nacional de Catalunya)<br />
+24 de septiembre (La Mercè).<br />
+
+Los tiquets se entregarán en dos turnos hasta agotar entradas<br />
+Horario de invierno<br />
+del 1 de noviembre al 31 de marzo<br />
+de las 10 de la mañana a las 13.30 horas y de las 13.30 a las 16.30 horas.<br />
+Horario de verano<br />
+del 1 de abril al 31 de octubre<br />
+de las 10 de la mañana a las 15 horas y de las 15 a las 20 horas.
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

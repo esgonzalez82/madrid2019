@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Palau de la Música<br />
+	<audio src="audios/barcelona036.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker036">Ver ubicación</button>
+<img src="images/036.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Palau de la Música Catalana es un auditorio de música situado en el barrio de la Ribera. La construcción fue producto del empeño de dos músicos catalanes, Amadeu Vives y Lluís Millet, fundadores del Orfeo Català, una sociedad coral de vital importancia en la Catalunia de finales del siglo XIX. Fue construido entre 1905 y 1908 como sede del Orfeón Catalán por el arquitecto modernista Lluís Domènech i Montaner,  uno de los máximos representantes del modernismo catalán. Fue sufragado por industriales y financieros catalanes, ilustrados y amantes de la música.<br />
+<br />
+El Palau de la Música es una perla arquitectónica del modernismo catalán, la única sala de conciertos declarada Patrimonio Mundial por la UNESCO (4 de diciembre de 1997). <br />
+El 9 de febrero de 1908, se celebra su inauguración. El auditorio fue destinado a conciertos de música orquestal e instrumental, así como a interpretaciones corales y a recitales de cantantes. Pero en el Palacio también ha servido para la realización de  actos culturales, políticos, obras teatrales y por supuesto variadas actuaciones musicales.<br />
+<br />
+Aunque la fachada que da a Sant Pere més alt sería la principal de este palacio, el elemento más escénico de esta doble fachada se encuentra haciendo esquina y se trata de un  grupo escultórico, obra de Miquel Blay, que supone una alegoría a la Canción Popular Catalana. En este caso, San Jorge, patrón de Catalunia es quien está representado en esta escultura. Las columnas de ladrillo rojo están decoradas con cerámica dispuesta a modo de trencadís. Una galería en balcón del primer piso, decorada con dos filas de siete columnas y donde también se utilizó esta misma técnica, destaca en la fachada.  Estas primeras columnas con trencadís son seguidas de pilares de ladrillo rojo que se finalizan con las estatuas de algunos de los más importantes compositores de la historia de la música obra de Eusebi Arnau, quien ha sido un gran colaborador de Domènech i Montaner.<br />
+<br />
+La sala de conciertos del palacio presenta una excelente acústica, razón por la cual numerosos artistas de gran renombre han actuado en sus instalaciones. Es desde hace más de cien años el escenario privilegiado de la vida concertística, nacional e internacional, de la ciudad de Barcelona. Ha acogido estrenos mundiales y es un referente de la música sinfónica y coral del país. La sala se encuentra repleta de figuras como las musas que rodean el escenario, las valquirias de Wagner que surgen del techo, un busto de Anselm Clavé a un lado y uno de Beethoven al otro, y elementos de la naturaleza, como flores, palmeras o frutos.<br />
+
+<br />
+Aparte de la gran Sala de Conciertos, el Palau dispone de dos salas más donde se desarrolla la vida concertística. Por un lado el Petit Palau, un auditorio moderno inaugurado en 2004, utilizado para conciertos de cámara o pequeño formato, con unas condiciones acústicas excelentes y modernos equipos audiovisuales.<br />
+Por otro lado, la Sala de Ensayo del Orfeó Català es un espacio íntimo donde tienen lugar conciertos de pequeño formato, conferencias, presentaciones, y donde ensayan los coros del Orfeó Català. Con un arco semicircular de butacas, está caracterizada por unas grandes columnas, vitrales y decoración típica del modernismo catalán. Es también en este salón donde se encuentra la primera piedra que se colocó en 1905 durante la construcción del Palau.<br />
+Otro espacio representativo del Palacio es la Sala Lluís Millet, un gran salón −sala de descanso y encuentro− dedicado al maestro Millet, fundador del Orfeó Català. 
+También es escenario privilegiado el Foyer del Palau, el cual admite una numerosa concurrencia que ocupa sillas y mesas, tanto cuando hay audiciones como cuando se utiliza de restaurante-cafetería independiente. <br />
+<br />
+http://www.palaumusica.cat/es<br />
+<br />
+<b>Cómo llegar</b><br />
+<br />
+Autobús <br />
+Líneas: V15, V17, 45<br />
+Barcelona Bus Turístic (ruta norte y sur): Parada Casa Batlló - Fundación Antoni Tàpies. <br />
+City Tours (Barcelona Tours): Parada 2, Gótico.<br />
+Metro Urquinaona: L1, L4<br />
+<br />
+Tren<br />
+RENFE: Estación Plaza Cataluña<br />
+FGC: Estación Plaça Cataluña<br />
+<br />
+Parquing SABA Pl. Urquinaona, Pl. Cataluña y Catedral<br />
+
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

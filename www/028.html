@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Museo de Historia de Barcelona<br />
+	<audio src="audios/barcelona028.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker028">Ver ubicación</button>
+<img src="images/028.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Museo de Historia de Barcelona (Museu d'Història de Barcelona) es un museo que conserva, estudia, documenta, divulga y expone el patrimonio histórico y la historia de la ciudad de Barcelona, desde sus orígenes hasta el presente. Esto se traduce en una colección formada por más de 35.200 objetos vinculados a la vida municipal, a las fiestas, desfiles, gremios  y tradiciones de la ciudad. Además, el fondo también está integrado por objetos procedentes de las intervenciones arqueológicas en la ciudad, lo que supone un incremento de unos 4.000-5.000 objetos por año. Este crecimiento constante de su fondo es uno de los rasgos más singulares del museo.<br />
+Actualmente el Museo depende del Ayuntamiento de Barcelona y tiene su sede principal en la plaza del Rey, en el corazón de la Barcelona antigua. La institución está compuesta por un conjunto de edificios medievales e interesantes excavaciones. Estas permiten conocer la ciudad desde su fundación romana en el siglo I a.C. hasta la Barcelona de la Edad Media.<br /> 
+<br />
+Desde la Exposición Universal de Barcelona de 1888 se han registrado varios intentos de crear una exposición permanente de historia de Barcelona. Una de las más relevantes fue la exposición organizada por el historiador Agustí Duran Sanpere en el pabellón de Barcelona de la Exposición Internacional de 1929. Pero el hecho determinante para el origen del Museo fue el traslado de la Casa Padellàs, piedra a piedra, desde la calle de Mercaderes hasta la plaza del Rey en 1931. Este hecho fue consecuencia de la apertura de la Via Laietana y permitió descubrir los restos de una parte importante de la antigua Barcino. Asimismo, dieron lugar a una gran intervención arqueológica en toda la plaza del Rey que continuó hasta la Guerra Civil. Este hallazgo, junto a la recuperación del Palacio Real Mayor y a la rehabilitación del Salón del Tinell, confirmaron la idoneidad del conjunto monumental de la plaza como emplazamiento para el museo.<br />
+El museo se inauguró después de la Guerra Civil, en 1943 y su primer director fue Agustí Duran i Sanpere. De manera gradual el Museo de Historia de la Ciudad fue incorporando espacios anexos, como por ejemplo el templo romano de Barcelona.<br /> 
+En cuanto al proyecto museístico, se puede considerar que no alcanzó la madurez hasta comienzos de los años sesenta, con la plena definición de su exposición permanente.<br />
+Desde el año 1996 el museo depende del Instituto de Cultura de Barcelona a raíz de la creación de este organismo que agrupa todas las funciones municipales en materia de cultura.<br />
+La visita al Museo se inicia con una reconstrucción de la Barcelona “Barcino” romana. Luego se toma un ascensor hasta las excavaciones, viajando en el tiempo hasta el año 12 a.C. En el yacimiento es posible pasear por una de las calles de la Barcelona romana. Se recorren una fábrica en la que se salaba el pescado, un barrio de talleres en los que se lavaba y se teñía la ropa, una instalación vinícola y la iglesia de la antigua Barcino.<br />
+Después de varios siglos, de nuevo en el antiguo Palacio Condal, las exposiciones permiten descubrir la formación de la ciudad medieval y su transformación en la capital del imperio. El recorrido se completa con la visita a la Capilla de Santa Ágata y a uno de los salones del palacio.<br />
+Desde 2007 se ha adoptado la denominación Museo de Historia de Barcelona (MUHBA). El museo ha reforzado su interés por la Barcelona contemporánea y ha crecido en red con la puesta en funcionamiento del Centro de Conservación y Restauración, que incluye el Archivo Arqueológico (2006). Asimismo, con la renovación o incorporación de nuevos centros patrimoniales distribuidos por la ciudad, ​​como el monasterio de Pedralbes (vinculado al MUHBA entre 1999 y 2012), la casa del guarda del Park Güell (2002), entre otros.<br /> 
+<br />
+<b>Horario</b><br />
+De martes a sábado: de 10 a 19h.<br />
+Domingos de 10 a 20h.<br />
+Lunes cerrado.<br />
+<br />
+<b>Precio</b><br />
+Adultos: 7€.<br />
+Menores de 25 años y mayores de 65: 5€.<br />
+Menores de 16 años: entrada gratuita.<br />
+Entrada gratuita con Barcelona Card.<br />
+Entrada combinada para todos los centros del MUHBA.<br />
+<br />
+Entrada gratuita<br />
+Primer domingo del mes.<br />
+Domingos a partir de las 15h.<br /><br />
+<b>Como llegar</b><br />
+Metro: Catalunya (L1 i L3), Urquinaona ( L1 i L4), Liceu (L3) i Jaume I (L4)<br />
+Bus: 45, V15 y V17<br />
+Barcelona Bus Turístico: Ruta Sur (roja)<br /><br />
+http://ajuntament.barcelona.cat/museuhistoria/es/
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

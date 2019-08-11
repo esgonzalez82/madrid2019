@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Arco de Triunfo<br />
+	<audio src="audios/barcelona039.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker039">Ver ubicación</button>
+<img src="images/039.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Arco de Triunfo (en catalán: Arc de Triomf) es un monumento situado en la confluencia entre el paseo de Lluís Companys, el paseo de San Juan y la ronda de San Pedro, en la ciudad de Barcelona.  Fue diseñado por el arquitecto Josep Vilaseca como entrada principal a la Exposición Universal de Barcelona de 1888.<br />
+Tiene una altura de 30 metros y la estructura es de ladrillo visto de inspiración neomudéjar, un estilo de moda en la España de aquel momento. Consiste en dos pilastras macizas unidas por un arco, rematadas por una superestructura plana o ático.<br />
+Una mirada detallada a este portal nos hace comprender que el Arco del Triunfo constituía la puerta de entrada a la modernidad de la Barcelona de finales del siglo XIX. Por un lado, el friso orientado hacia el paseo de Sant Joan representaba Barcelona recibiendo a las naciones. Por otro, se ve cómo la ciudad entrega los galardones a los participantes de la Exposición. Los relieves laterales simbolizan la Agricultura y la Industria a un lado y el Comercio y el Arte en el otro. Y encima del arco, los escudos de las 49 provincias españolas son presididas por el escudo de armas de Barcelona.<br />
+Aunque los arcos de triunfo son normalmente monumentos construidos para conmemorar una victoria militar, el de Barcelona no cumple esta máxima ya que es una construcción puramente civil marcada por el progreso artístico, científico y económico.
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

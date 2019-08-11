@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	La Boquería<br />
+	<audio src="audios/barcelona010.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker010">Ver ubicación</button>
+<img src="images/010.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Mercat de Sant Josep o Mercado de San José, popularmente conocido como “La Boquería“,es el mercado más famoso de la ciudad Condal y una de sus principales atracciones turísticas. Se encuentra en Las Ramblas de Barcelona y se trata del lugar ideal para comprar productos frescos, aunque en la actualidad el mercado también se ha convertido en una llamativa atracción turística. Tiene más de 2.500 metros cuadrados a lo largo de los cuáles se ubican más de 300 puestos que ofrecen todo tipo de productos como huevos, carnes, embutidos, dulces y  zumos de frutas.<br />
+ <br />
+El mercado fue inaugurado en 1840. Sin embargo, sus orígenes se remontan muchos años atrás ante las puertas de la antigua ciudad, en la explanada del Pla de la Boqueria. Era allí donde vendedores ambulantes y labradores de los pueblos se instalaban al aire libre para comercializar sus productos. Este mercado se hacía fuera de las murallas de la ciudad por ahorrar el impuesto de entrada de mercancías.Desde 1217 está documentada la presencia de mesas de venta de carne cerca del actual Pla de la Boqueria. <br />
+Antes del mercado, estuvo en el mismo lugar el convento de San José. En 1586 los carmelitas descalzos (denominados els josepets por ser los difusores del culto popular a la figura de San José) fundaron el convento en el lugar donde hoy está el mercado.<br />
+A medida que la Rambla fue tomando importancia como paseo urbano en el siglo XVIII, se consideró necesario sacar las carnicerías de su recorrido. Estas fueron desplazadas hacia el interior, junto al huerto del convento de San José. En 1835 se produjo la destrucción del convento. Junto con otros conventos de la zona, fue asaltado e incendiado durante el motín anticlerical instigado y dirigido por algunos políticos liberales el día de San Jaime (25 de julio) de aquel año. 
+El mercado como tal se empezó a plantear en 1836, después del derribo del mencionado convento. En un principio se pensó en hacer allí una plaza que habría recibido el nombre de plaza del Treball, pero posteriormente se decidió instalar el mercado para sacarlo de en medio de la Rambla. Por ello, actualmente está rodeado de edificios con porches, como encontramos por ejemplo en la plaza Reial. El proyecto recayó en el arquitecto Mas Vila y las obras comenzaron en 1840. Ese mismo año se inauguró el mercado.<br />
+En 1911 se construyó la actual pescadería y en 1914 se inauguró el mercado con la cubierta metálica. A partir de entonces, comenzaron a modernizar y mejorar a nivel sanitario, estético, y decorativo.<br />
+A finales de siglo ocurrió un hecho que hizo peligrar la continuidad del mercado, Ildefons Cerdà rediseñó la Rambla como un boulevard donde el mercado no tenía cabida. Finalmente se adoptó la idea de Baixeres, muy similar pero contemplando el mercado como un atractivo más de la Rambla.
+Coincidiendo con el inicio del siglo XXI el mercado ha renacido comercialmente y en la actualidad se sitúa como un referente mundial. Este hecho se demuestra con los numerosísimos premios recibidos, entre los que se incluye el de mejor mercado del mundo otorgado por el Congreso Mundial de Mercados celebrado en Washington DC en el 2005.<br />
+Otra de las incorporaciones, en el año 2003, es el Aula Gastronómica del mercado. Allí se enseña a cocinar a niños y adultos y diariamente se celebran eventos relacionados con el mundo de la gastronomía.<br />
+Respecto al origen de su nombre, la versión más aceptada dice que en realidad el nombre de La Boquería se corresponde con la carne de cabrito (“boc” en catalán), que era vendida por la comunidad judía ya en el s.XIII.<br />
+<br />
+<b>Horario</b><br />
+De lunes a sabado de 8:00 a 20:30 h<br />
+Domingo	Cerrado
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

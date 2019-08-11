@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Port Vell<br />
+	<audio src="audios/barcelona021.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker021">Ver ubicación</button>
+<img src="images/021.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Puerto Viejo (Port Vell en catalán) es la parte más antigua del Puerto de Barcelona y es uno de los espacios preferidos por los barceloneses y turistas. Nace donde mueren las Ramblas de Barcelona, con el monumento a Colón como emblema desde 1886. En la cima de la columna, situada a 50 metros de altura, un mirador ofrece vistas al mar y al famoso paseo.<br />
+<br />
+A un lado se encuentra el Museu Marítim de Barcelona y las Drassanes Reials del siglo XIV.<br />
+En dirección al mar podremos ver, en el Portal de la Pau, el Pailebot Santa Eulàlia, un velero histórico original de 1918, bautizado con el nombre de la copatrona de la ciudad. Es aquí donde parten los barcos que ofrecen un paseo por las aguas del Port Vell, llamados las Golondrinas.<br />
+La Rambla de Mar conduce por un lado al Maremagnum, un gran centro comercial abierto todos los días del año, y por el otro al Aquarium de Barcelona.<br />
+El Moll de la Fusta (Muelle de la Madera) es el muelle original correspondiente al Port Vell, aunque ha sido reformado en diversas ocasiones. En el muelle encontramos entre otros monumentos, a la pareja de enamorados que sentados disfrutan mirando hacia el mar. <br />
+También podemos encontrar en el Port Vell la ”Cara de Barcelona”, una vistosa obra del artista pop norteamericano Roy Lichtenstein. Se trata de una escultura que se levanta hasta 15 metros de altura en el Paseo Colon. El monumento es un homenaje a la ciudad que iba a acoger los Juegos de 1992 y a su arquitecto más famoso: Antoni Gaudí.<br />
+Aún en el Port Vell y ya tocando a la Barceloneta, se encuentra el edificio de los antiguos Almacenes Generales del Comercio que nos recuerda el pasado mercantil de la zona.<br /> 
+El Palau de Mar, otro punto de interés que ofrece el puerto viejo de la ciudad condal, aloja uno de los museos más interesantes de Barcelona, el Museu d’Història de Catalunya.
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

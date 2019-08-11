@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Barrio Gótico<br />
+	<audio src="audios/barcelona009.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker009">Ver ubicación</button>
+<img src="images/009.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Barrio Gótico es uno de los cuatro barrios que forman el distrito de Ciutat Vella de Barcelona. Es el núcleo más antiguo y una de las zonas más hermosas de la ciudad y está delimitado por Las Ramblas, la Vía Laietana, el Paseo de Colón y la Plaza de Cataluña.
+Nacida sobre los restos de la Barcino romana, la Barcelona medieval propició la construcción de iglesias y palacios góticos que provocaron la desaparición de la mayor parte de los restos románicos. La estructura del barrio permaneció casi intacta hasta el siglo XIX, cuando se derriban las antiguas murallas medievales y se transforman los cementerios parroquiales en plazas públicas.
+Además de los contar con uno de los más bellos edificios góticos de toda Europa, un gran número de bares, restaurantes y tiendas mantiene la zona en permanente animación.<br />
+<br />
+El Barrio Gótico de Barcelona cuenta con numerosos atractivos turísticos. Algunos a destacar son:<br />
+<br />
+ - Catedral de Santa Eulalia: También conocida como la Seu, la Catedral de Barcelona es un famoso ejemplo de la arquitectura gótica catalana que data del siglo XIV. Tiene una impresionante fachada gótica que recuerda a las grandes catedrales francesas. <br />
+<br />
+ - Plaza Sant Jaume: Esta plaza, que lleva el nombre de una iglesia demolida en 1824, ha sido el Centro político de Barcelona desde el siglo XIV. Una gran explanada alberga el Ajuntament (Ayuntamiento de Barcelona) y el Palau de la Generalitat, sede del gobierno autonómico de Cataluña.<br />
+<br />
+ - Plaza Real: Situada junto a Las Ramblas, esta sorprendente plaza está inspirada en modelos franceses y castellanos con robustos pórticos y está rodeada de fachadas neoclásicas del siglo XIX. En esta plaza y las calles aledañas se encuentran algunos de los restaurantes más clásicos y caros de Barcelona.<br />
+<br />
+ - Plaza del Rey: Desde comienzos de la Edad Media, la plaza fue la sede del Palau Reial, una de las principales residencias de los Condes de Barcelona. Casi todo lo que hoy puede verse data de los siglos XIV y XV, y junto con los restos arqueológicos que hay en el subsuelo, constituye el Museu d’Historia de la Ciutat. El museo incluye interesantes excavaciones que permiten conocer la ciudad desde su fundación romana en el siglo I a.C. hasta la Barcelona de la Edad Media.<br />
+<br />
+ - Calle Portal de L'Angel: Compone una de las arterias comerciales más agradables y completas de la ciudad.<br />
+<br />
+- Museo Frederic Marès: Situado en una parte del antiguo Palacio de los Condes de Barcelona compone un singular espacio en el que se exponen las obras del coleccionista. Él fue uno de los grandes escultores catalanes del siglo XX, y un gran coleccionista de arte.<br />
+<br />
+ - La Judería: A pesar de que el barrio conocido como El Call (en catalán) fue abolido hace más de 600 años, aún es posible encontrar algunos restos del que fuera el barrio judío de la ciudad.<br />
+<br />
+ - Plaça del Pi y alrededores: La Plaça del Pi (Plaza del Pino) está presidida por la Iglesia de Santa María del Pino. La fachada, una impresionante pared de piedra con un enorme rosetón y un majestuoso pórtico, es típica del gótico catalán. Frente a la iglesia hay un bonito edificio del siglo XVII que fue sede de uno de los gremios de artesanos de la ciudad. En el estrecho Carrer de Petritxol, podemos encontrar chocolaterías (“granjas”) que son famosas desde el siglo XVIII.  En el Carrer de Ferran puede verse la Iglesia de Sant Jaume, primero sinagoga y transformada más tarde en iglesia y convento por los judíos conversos.<br />
+<br />
+_ Iglesias del Barrio Gótico<br />
+La Iglesia de la Mercé es uno de los pocos templos barrocos de Barcelona, aunque la fachada sobre el Carrer Ample es renacentista. La iglesia fue construida sobre una estructura gótica anterior y alberga la imagen de Nuestra Señora de la Merced, copatrona de la ciudad desde 1637.<br />
+A unos pasos de la Catedral se emplaza la Iglesia de Sant Felip Neri, un modesto templo barroco de mediados del siglo XVIII que aún muestra impactos de bala en su fachada del año 1939.<br />
+La Iglesia de los Santos Justo y Pastor es la más antigua de Barcelona, fundada en el año 801. La actual estructura se construyó siglos después en estilo gótico catalán.<br />
+Escondida en una plazoleta junto al Carrer Comtal se emplaza la Iglesia de Santa Ana, que tiene sus orígenes en un monasterio del siglo XII y un precioso claustro gótico. La iglesia románica fue declarada monumento nacional en el año 1881 y fue declarado Bien de Interés Nacional.
+
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

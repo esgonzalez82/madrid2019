@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	La Casa del Arcediano<br />
+	<audio src="audios/barcelona017.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker017">Ver ubicación</button>
+<img src="images/017.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+La Casa del Arcediano  es un espacio peculiar situado en el barrio Gótico de Barcelona. Ha sido edificado aprovechando una parte de la muralla romana, visible desde el interior.  A través de los años ha tenido diversas utilidades, siendo actualmente y desde 1919, sede del archivo histórico de la ciudad. <br />
+En este edificio vivía la jerarquía eclesiástica de los Arcedianos desde el siglo XII cuando la catedral de Barcelona empezó a tomar la forma gótica actual. Más adelante, se utilizó como centro político, juzgado y taller de artistas, hasta que finalmente se convirtió en el Colegio de Abogados antes de que pasara a tener el uso actual. <br />
+A lo largo de su historia la Casa ha sufrido innumerables modificaciones. La más importante fue realizada por orden del Archidiácono Lluís Desplà i d´Oms, en el siglo XVI que convirtió la Casa en un Palacete de estructura gótica. Durante esta reforma se realizó el patio central, las decoraciones renacentistas de la portada, la galería y la fuente central.<br />
+En el siglo XIX, pasó a manos de propietarios burgueses, que completaron el patio en forma de claustro, según proyecto del arquitecto Josep Garriga, hacia 1870.<br /> 
+En 1895, se convirtió en la sede del Colegio de Abogados de Barcelona. Precisamente en esta época nació el curioso buzón de la entrada de estilo modernista. Este fue obra de Lluís Domènech i Montaner, arquitecto nacido en Barcelona que destacó por sus obras edificadas en el estilo modernista catalán. Lo encontrarás al lado derecho de la puerta de entrada aludiendo a la justicia sobre la calle de Santa Llúcia, 1. El buzón es rectangular y está formado por los relieves esculpidos en mármol blanco de una hiedra de siete hojas, cinco golondrinas, el escudo del Colegio de Abogados y la misteriosa tortuga. La curiosa historia de la tortuga responde a una interpretación insólita del arquitecto Domènech i Montaner, que representa al hecho de que la justicia camina a paso de tortuga. Las golondrinas eran el símbolo de que la justicia vuela alto y, en contraste, la hiedra simboliza los tropiezos burocráticos y los procedimientos administrativos. Después de ver la obra el decano del Colegio de Abogados no quedó muy contento con el resultado. La historia cuenta que después de escuchar la crítica, Lluís Domènech i Montaner respondió al decano con el dicho: “Abogados y procuradores, al infierno de dos en dos“. La obra fue aprobada en discordia y desde entonces se puede ver en la puerta de la Casa del Arcediano. Algunos creyentes dicen que tocar el caparazón de la tortuga garantiza suerte para una buena temporada pero en realidad lo único que se logra es deteriorar una obra de arte.<br />
+En 1919 el edificio fue adquirido por el Ayuntamiento de Barcelona para instalar el Archivo Histórico de la Ciudad y se hicieron reformas dirigidas por el arquitecto Josep Goday. <br />
+Finalmente, entre los años 1991 y 1998, la Casa del Arcediano fue sometida a una reforma integral; el objetivo, consolidar el edificio y mejorar las condiciones de trabajo y de conservación de la documentación, según el proyecto de los arquitectos Roser Amadó y Lluís Domènech.<br />
+Es Bien de Interés Cultural desde el año 1924.
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>

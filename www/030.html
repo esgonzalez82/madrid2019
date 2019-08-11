@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xml:lang="es" lang="es">
+  <head>
+    <title>Audio Guia</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />   
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/leaflet.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="js/barcelona.js"></script>
+	<script>
+		//pasar por get parametros
+		function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var punto = getParameterByName('punto');
+		
+	</script>  
+</head>
+
+<body>	
+<div id="listado_titulo">BARCELONA</div>	
+
+<div class="audio">
+	Museo de historia de Catalunya<br />
+	<audio src="audios/barcelona030.mp3" preload="auto" controls></audio>
+</div>
+
+<div class="contenido">
+	<button type="button" class="btn-audios" onClick=location.href="mapa.html?pop=marker030">Ver ubicación</button>
+<img src="images/030.jpg"  width="100%"><br />
+<!-- 500x300 -->	
+</div>
+
+<div class="detalle">
+El Museo de Historia de Cataluña abre sus puertas en febrero de 1996, por decisión del gobierno de la Generalidad de Cataluña. A diferencia de otras instituciones museísticas, no nace fruto de la necesidad de exhibir una colección previamente existente, sino con la voluntad de convertirse en un referente en la divulgación de la historia y del patrimonio colectivo del país.<br />
+El museo se ubica en los antiguos Almacenes Generales de Comercio (MGC), el único edificio conservado del viejo puerto industrial de Barcelona. Después de una intensa labor de restauración y adecuación del espacio, iniciada en 1991 con motivo de los Juegos Olímpicos, se toma la decisión de instalar el MHC y una exposición permanente sobre la historia de Cataluña.<br />
+Desde su inauguración, el museo recibe miles de visitantes cada año. De este modo, en la primera planta del edificio, se acondiciona un espacio de 1.200 m² destinado a acoger exposiciones temporales. La oferta expositiva se complementa, asimismo, con una serie de actividades educativas, lúdicas y académicas.<br />
+Con el paso de los años, la entidad desarrolla una colección propia, fruto de las donaciones de objetos y documentos. Aunque son de naturaleza muy heterogénea, la mayoría de las piezas están relacionadas con la historia política e institucional de Cataluña. Desde el año 1997, además, en el mismo edificio se ubica el Centro de Historia Contemporánea de Cataluña (CHCC) y su importante biblioteca.<br />
+El Museo de Historia de Cataluña forma parte de la Red de Museos y Monumentos de Historia de Cataluña y depende de la Agencia Catalana de Patrimonio Cultural (ACdPC).
+<br /><br />
+<b>Horario</b><br />
+De martes a sábado de 10 a 19h.<br />
+Miércoles de 10 a 20h.<br />
+Domingos y festivos de 10 a 14.30h.<br />
+<br />
+Cerrado<br />
+Lunes.<br />
+1 y 6 de enero.<br />
+25 y 26 de diciembre.<br />
+<br />
+<b>Precio</b><br />
+Exposición permanente<br />
+Tarifa general 4,50€.<br />
+Tarifa para grupos 4€.<br />
+Tarifa reducida 3,50€.<br />
+Tarifa reducida especial 2€.<br />
+ <br />
+Exposición temporal<br />
+Tarifa general 4€.<br />
+Tarifa para grupos 3,50€.<br />
+Tarifa reducida 3€.<br />
+Tarifa reducida especial 1,50€.<br />
+ <br />
+Tarifa combinada<br />
+Exposición permanente + exposición temporal<br />
+Tarifa general 6,50€.<br />
+Tarifa para grupos 6€.<br />
+Tarifa reducida 4,50€.<br />
+Tarifa reducida especial 2,50€.<br />
+<br />
+<b>Como llegar</b><br />
+Autobus: V17, H14, D20, V15, V13, 39, 45, 51, 59 i 120<br />
+Metro: L4 (groga) Barceloneta.<br />
+Barcelona Bus Turístic. Linea roja y Barcelona City Tour. Ruta est. Parada "Museu d’Història de Catalunya"
+
+</div>
+
+<div id="botonera">
+	<a href="index.html"><img src="images/btn_mapa.png" height="48" width="90"></a>
+	<a href="listado.html"><img src="images/btn_listado.png" height="48" width="90"></a>
+	<a href="info.html"><img src="images/btn_info.png" height="48" width="90"></a>
+</div>
+
+<script src="js/bicis.js"></script>    
+</body>
+
+</html>
